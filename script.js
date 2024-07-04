@@ -4,6 +4,8 @@ import db  from "./firebase.js";
 const d = document;
 
 const $form = d.querySelector(".contact-form_form");
+const $btn_hamburguer = d.querySelector(".btn-hamburguer");
+
 
 const countUserVisit = async () => {
 
@@ -138,8 +140,6 @@ d.addEventListener("DOMContentLoaded", () => {
    
 });
 
-
-
 $form.addEventListener("submit", (e) => {
 
    e.preventDefault();
@@ -149,9 +149,26 @@ $form.addEventListener("submit", (e) => {
    }
    window.scroll(0, d.body.offsetHeight);
    sendMail();
+});
 
+
+d.addEventListener("click", (e) => {
+
+
+   if(e.target.matches(`.btn-hamburguer`) || e.target.matches(`.btn-hamburguer *`)) {
+
+      let $btn_hamburguer_menu_movil = $btn_hamburguer.querySelector(".btn-hamburguer_menu_movil");
+
+      $btn_hamburguer_menu_movil.classList.toggle("hide");
+
+   }
 
 });
+
+/* $btn_hamburguer.addEventListener("click", (e) => {
+   let $btn_hamburguer_menu_movil = e.target.querySelector(".btn-hamburguer_menu_movil");
+   $btn_hamburguer_menu_movil.classList.toggle("hide");
+}) */
 
 
 
