@@ -527,7 +527,7 @@ body {
    padding: 0.9rem 0;
 }
 
-.menu-movil_sub_menu > a {
+.menu-movil_sub_menu > span {
    color: #000;
    text-decoration: none;
    
