@@ -472,27 +472,18 @@ body {
 /* Btn-Hamburguer */
 
 .btn-hamburguer {
-   outline: medium solid #fff;
-   background-color: var(--background-text-color-opacity);
+   outline: medium solid #020202;
    position: fixed;
-   width: 4rem;
-   height: 4rem;
-   right: 2rem;
-   bottom: 2rem;
-   z-index: 9000;
-   cursor: pointer;
-   padding: 0.8rem;
-   border-radius: 2rem;
-   transition: background-color linear 300ms;
+   bottom: 0.5rem;
+   right: 1rem;
+   background-color: #ffffff;
+   border-radius: 50%;
+   z-index: 9500;
+   
 }
 
-.btn-hamburguer > svg {
-   width: 100%;
-}
 
-.btn-hamburguer:hover:not(:has(a:hover)) {
-   background-color: #ffffff88;
-}
+
 
 @media screen and (min-width: 50rem) {
    .btn-hamburguer {
@@ -502,30 +493,69 @@ body {
 
 /* Menu Movil */
 
-.btn-hamburguer_menu_movil {
+.menu-movil {
    text-align: center;
-   position: absolute;
-   width: 13rem;
-   bottom: 5rem;
-   right: -1.0rem;
-   
+   position: fixed;
+   width: 100%;
+   height: 100vh;
+   top: 0rem;
+   left: 0rem;
    padding: 0.4rem 0.4rem;
    background-color: #ffffff;
    cursor: pointer;
-   transition: opacity linear 300ms;
-   border-radius: 1rem;
+   transition: transform linear 300ms;
+   z-index: 9000;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    
 }
 
-.btn-hamburguer_menu_movil > a {
+.menu-movil_content > a {
+   width: 100%;
    display: block;
    color: #000;
    text-decoration: none;
    padding: 0.9rem 0;
 }
 
-.btn-hamburguer_menu_movil > a:hover {
+.menu-movil_content > a:hover {
    color: #21bbc0;
+}
+
+.menu-movil_sub_menu {
+   padding: 0.9rem 0;
+}
+
+.menu-movil_sub_menu > a {
+   color: #000;
+   text-decoration: none;
+   
+}
+
+.menu-movil_sub_menu:hover .menu-movil_sub_menu_content {
+   color: #21bbc0;
+   height: 10rem;
+}
+
+
+.menu-movil_sub_menu_content {
+   transition: height linear 300ms;
+   height: 0rem;
+   overflow-y: hidden;
+   background-color: #000;
+}
+
+.menu-movil_sub_menu_content  > a {
+   display: block;
+   padding: 1rem 0.1rem;
+   text-decoration: none;
+   color: #fff;
+}
+
+.menu-movil_sub_menu_content  > a:hover {
+   color: #21bbc0;
+
 }
 
 
@@ -540,7 +570,6 @@ body {
    width: 100%;
    z-index: 9999;
    background-color: #000;
-   padding: 1rem 0;
    justify-content: space-evenly;
    align-items: center;
 }
@@ -549,20 +578,19 @@ body {
    color: var(--text-color);
    text-decoration: none;
    transition: color linear 300ms;
-   
+   padding: 1rem 0;
 }
 
 
-.menu-desktop > *:hover {
+.menu-desktop > a:hover {
    color: #0099ff;
 }
 
 .menu-desktop_sub_menu {
-
-}
-
-.menu-desktop_sub_menu:hover .menu-desktop_sub_menu_content {
-   opacity: 1;
+   position: relative;
+   height: 100%;
+   padding: 2rem 0;
+   cursor: pointer;
 }
 
 .menu-desktop_sub_menu > a {
@@ -570,20 +598,35 @@ body {
    text-decoration: none;
 }
 
-.menu-desktop_sub_menu > a:hover {
-   color: #0099ff;
 
+.menu-desktop_sub_menu:hover .menu-desktop_sub_menu_content {
+   opacity: 1;
+   pointer-events: auto;
 }
 
+
 .menu-desktop_sub_menu_content {
+   pointer-events: none;
    opacity: 0;
    position:absolute;
    top: 5rem;
    background-color: #000;
+   width: 10rem;
+   left: -3.6rem;
+   
 }
 
+
 .menu-desktop_sub_menu_content > a {
+   text-decoration: none;
    color: var(--text-color);
+   display: block;
+   text-align: center;
+   padding: 0.5rem 0.2rem;
+}
+
+.menu-desktop_sub_menu_content > a:hover {
+   color: #0099ff;
 }
 
 .menu-desktop svg {
@@ -612,9 +655,15 @@ body {
 
 /* ********** Utilities ************* */
 
+
+
 .hide {
    opacity: 0;
    pointer-events: none;
+}
+
+.hide-to-left {
+   transform: translateX(-100%);
 }
 
 .input_error {

@@ -6,6 +6,7 @@
       <title>Entrena Conmigo</title>
       <link rel="icon"  href="https://migueleonrojas.github.io/entrena-conmigo/en-el-avila/assets/logo/icon-mountain.ico"/>
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="./dist/hamburgers.css">
       <link rel="canonical" href="https://migueleonrojas.github.io/entrena-conmigo/en-el-avila" />
       <!-- en el href se debe colocar una ruta absoluta -->
       <link rel="favicon" href="https://migueleonrojas.github.io/entrena-conmigo/en-el-avila/assets/logo/icon-mountain.ico" />
@@ -38,33 +39,43 @@
          <a href="#about-me">Sobre de mí</a>
          <a href="#routes">Actividades</a>
          <a href="#our-guides">El Proyecto</a>
-         <!-- <article class="menu-desktop_sub_menu">
+         <article class="menu-desktop_sub_menu">
             <a href="#gallery">Rutas</a>
             <aside class="menu-desktop_sub_menu_content">
-               <a href="#">Próximas Rutas</a>
-               <a href="#">Rutas Explotarias</a>
+               <a href="#gallery">Algunas Rutas</a>
+               <a href="#next-routes">Próximas Rutas</a>
+               <a href="#exploring-routes">Rutas Explotarias</a>
             </aside>
-         </article> -->
-         <a href="#gallery">
-            Rutas
-         </a>
+         </article>
          <a href="#contact-form">Contacto</a>
       </header>
+      
 
       <article class="btn-hamburguer">
-         <aside class="btn-hamburguer_menu_movil hide" >
+         <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+      </article>
+      <aside class="menu-movil hide-to-left">
+         <article class="menu-movil_content">
             <a href="#about-me">Sobre de mí</a>
             <a href="#routes">Actividades</a>
             <a href="#our-guides">El Proyecto</a>
-            <a href="#gallery">Rutas</a>
+            <!-- <a href="#gallery">Rutas</a> -->
+            <article class="menu-movil_sub_menu">
+               <a href="#gallery">Rutas</a>
+               <aside class="menu-movil_sub_menu_content">
+                  <a href="#gallery">Algunas Rutas</a>
+                  <a href="#next-routes">Próximas Rutas</a>
+                  <a href="#exploring-routes">Rutas Explotarias</a>
+               </aside>
+            </article>
             <a href="#contact-form">Contacto</a>
-         </aside>
-         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            <path d="M4 6L20 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-         </svg>
-      </article>
+         </article>
+         
+      </aside>
       <main>
          <section class="presentation" id="presentation">
             <article class="presentation_content">

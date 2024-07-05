@@ -1,11 +1,11 @@
 import validateInputs from "./scripts/validate-input-script.js";
+import toggleMenuMovil from "./scripts/toggle-menu.js";
 import { canCountVisit, countUserVisit } from "./scripts/count-visit-script.js";
 import getCountVisitTotal from "./scripts/get-count-visit.js";
 import sendMail from "./scripts/send-mail-script.js";
 
 const d = document;
 const $form = d.querySelector(".contact-form_form");
-const $btn_hamburguer = d.querySelector(".btn-hamburguer");
 
 
 d.addEventListener("DOMContentLoaded", () => {
@@ -36,9 +36,18 @@ d.addEventListener("click", (e) => {
 
    if(e.target.matches(`.btn-hamburguer`) || e.target.matches(`.btn-hamburguer *`)) {
 
-      let $btn_hamburguer_menu_movil = $btn_hamburguer.querySelector(".btn-hamburguer_menu_movil");
+      toggleMenuMovil();
 
-      $btn_hamburguer_menu_movil.classList.toggle("hide");
+   }
+
+   if(e.target.matches(`.menu-movil_content > a`)) {
+
+      toggleMenuMovil();
+
+   }
+
+   if(e.target.matches(`.menu-movil_sub_menu_content > a`)) {
+      toggleMenuMovil();
 
    }
 
