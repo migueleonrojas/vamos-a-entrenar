@@ -353,6 +353,24 @@ body {
    pointer-events: auto;
 }
 
+/* COUNT-VISIT SECTION */
+.count-visit {
+   padding: 2rem 0;
+   background-color: #000;
+}
+
+.count-visit > h2 {
+   margin: 0;
+   text-align: center;
+}
+
+.count-visit > span {
+   display: block;
+   text-align: center;
+   padding-top: 2rem;
+   font-size: 3rem;
+}
+
 /* CONTACT-FORM SECTION */
 .contact-form {
    background-image: url("assets/imgs/section-image-5.webp");
