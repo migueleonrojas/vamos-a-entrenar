@@ -5,10 +5,10 @@ const validateInputs = (inputs) => {
    let validate = false;
 
    const regxInput = [
-      RegExp(/^[a-zA-ZáéíóúÁÉÍÓÚ ]*$/g),
-      RegExp(/^[a-zA-ZáéíóúÁÉÍÓÚ ]*$/g),
+      RegExp(/.+/g),
+      RegExp(/.+/g),
       RegExp(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/),
-      RegExp(/^[a-zA-ZáéíóúÁÉÍÓÚ ]*$/g),
+      RegExp(/.+/g),
    ];
 
    inputs.forEach((input, index) => {
