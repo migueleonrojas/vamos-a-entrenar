@@ -1,13 +1,12 @@
 import validateInputs from "./scripts/validate-input-script.js";
-import toggleMenuMovil from "./scripts/toggle-menu.js";
+import toggleMenuMovil from "./scripts/toggle-menu-script.js";
 import { canCountVisit, countUserVisit } from "./scripts/count-visit-script.js";
-import getCountVisitTotal from "./scripts/get-count-visit.js";
+import getCountVisitTotal from "./scripts/get-count-visit-script.js";
 import sendMail from "./scripts/send-mail-script.js";
+import waitForAnimationMenuMovilByChangeCurrentUrl from "./scripts/wait-for-animation-menu-movil-by-change-current-url-script.js"
 
 const d = document;
 const $form = d.querySelector(".contact-form_form");
-const $ancoreOtherSide = d.querySelectorAll(".other-page")
-
 
 
 d.addEventListener("DOMContentLoaded", () => {
@@ -33,9 +32,6 @@ $form.addEventListener("submit", (e) => {
 });
 
 
-/* console.log($ancoreOtherSide.entries()) */
-
-
 d.addEventListener("click", (e) => {
 
 
@@ -57,22 +53,5 @@ d.addEventListener("click", (e) => {
 
 });
 
-$ancoreOtherSide.forEach((el) => {
-   el.addEventListener("click", (e) => {
-      e.preventDefault();
-      setTimeout(() => {
-            window.location.href = e.target.getAttribute("href");
-         }, 
-         300
-      );
-   })
-})
 
-
-
-
-
-
-
-
-
+waitForAnimationMenuMovilByChangeCurrentUrl();

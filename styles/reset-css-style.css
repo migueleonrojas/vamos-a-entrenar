@@ -1,0 +1,32 @@
+html {
+   box-sizing: border-box;
+   font-family: var(--font);
+   /* font-size: 16px; */
+   scroll-behavior: smooth;
+}
+ 
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+ 
+body {
+   margin: 0;
+   overflow-x: hidden;
+   color: var(--text-color);
+}
+
+[id] {
+
+   scroll-margin-top: 1%;
+}
+
+@media screen and (min-width:50rem) {
+   
+   [id] {
+
+      scroll-margin-top: 5ex;
+   }
+
+}

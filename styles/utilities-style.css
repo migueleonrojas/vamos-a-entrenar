@@ -1,0 +1,47 @@
+/* ********** Utilities ************* */
+
+.current-link {
+   color: #0099ff!important;
+}
+
+
+.hide {
+   opacity: 0;
+   pointer-events: none;
+}
+
+.hide-to-left {
+   transform: translateX(-100%);
+}
+
+.input_error {
+   border: 1px solid #ff0000;
+}
+
+
+.span_error_input {
+   display: block;
+   background-color: #ff0000;
+   color: #ffffff;
+   margin-top: -0.5rem;
+   text-align: center;
+   padding: 0.55rem;
+   font-family: roboto;
+   width: 90%;
+   margin: -1rem auto auto auto ;
+   font-family: var(--font);
+   
+}
+
+.span_success_send {
+   display: block;
+   background-color: #09ff00;
+   color: #ffffff;
+   margin-top: 0.5rem;
+   text-align: center;
+   padding: 0.55rem;
+   font-family: var(--font);
+   width: 100%;
+   font-size: 2rem;
+   transition: opacity linear 300ms;
+}

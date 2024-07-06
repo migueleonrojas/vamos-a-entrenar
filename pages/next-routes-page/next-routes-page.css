@@ -1,33 +1,4 @@
-/* ******************* Custom Properties ********************* */
 
-:root {
-   --text-color: #fff;
-   --background-text-color: #5093ee;
-   --background-text-color-opacity: #0000008c;
-   --font: "Raleway", sans-serif;
-}
-
-
-/* ******** Reset ********* */
-
-html {
-   box-sizing: border-box;
-   font-family: var(--font);
-   /* font-size: 16px; */
-   scroll-behavior: smooth;
-}
- 
-*,
-*::after,
-*::before {
-   box-sizing: inherit;
-}
- 
-body {
-   margin: 0;
-   overflow-x: hidden;
-   color: var(--text-color);
-}
 
 /* SECTION UNDER-CONTRUCTION */
 .under-construction {
