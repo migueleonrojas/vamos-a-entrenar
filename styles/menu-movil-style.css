@@ -62,3 +62,9 @@
    color: #21bbc0;
 
 }
+
+@media screen and (min-width: 50rem) {
+   .menu-movil {
+      transform: translateX(-100%);
+   }
+}
