@@ -6,6 +6,8 @@ import sendMail from "./scripts/send-mail-script.js";
 
 const d = document;
 const $form = d.querySelector(".contact-form_form");
+const $ancoreOtherSide = d.querySelectorAll(".other-page")
+
 
 
 d.addEventListener("DOMContentLoaded", () => {
@@ -31,6 +33,9 @@ $form.addEventListener("submit", (e) => {
 });
 
 
+/* console.log($ancoreOtherSide.entries()) */
+
+
 d.addEventListener("click", (e) => {
 
 
@@ -48,10 +53,22 @@ d.addEventListener("click", (e) => {
 
    if(e.target.matches(`.menu-movil_sub_menu_content > a`)) {
       toggleMenuMovil();
-
    }
 
 });
+
+$ancoreOtherSide.forEach((el) => {
+   el.addEventListener("click", (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+            window.location.href = e.target.getAttribute("href");
+         }, 
+         300
+      );
+   })
+})
+
+
 
 
 

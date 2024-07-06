@@ -1,0 +1,56 @@
+/* ******************* Custom Properties ********************* */
+
+:root {
+   --text-color: #fff;
+   --background-text-color: #5093ee;
+   --background-text-color-opacity: #0000008c;
+   --font: "Raleway", sans-serif;
+}
+
+
+/* ******** Reset ********* */
+
+html {
+   box-sizing: border-box;
+   font-family: var(--font);
+   /* font-size: 16px; */
+   scroll-behavior: smooth;
+}
+ 
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+}
+ 
+body {
+   margin: 0;
+   overflow-x: hidden;
+   color: var(--text-color);
+}
+
+/* SECTION UNDER-CONTRUCTION */
+.under-construction {
+   height: 100vh;
+   width: 100%;
+   background-image: url("https://c.pxhere.com/photos/6c/69/traffic_sign_warning_roadwork_traffic_sign_road_roadsign_transport-608677.jpg!d");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.under-construction > article {
+   
+   margin: 1rem;
+   padding: 0.5rem;
+   text-align: center;
+   border-radius: 0.5rem;
+   background-color: var(--background-text-color-opacity);
+}
+
+article > h1 {
+   font-size: 2rem;
+}
