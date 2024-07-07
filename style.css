@@ -62,7 +62,7 @@
 }
 
 .about-me_bg_section {
-   background: linear-gradient(90deg, #5093ee, #4184dd);
+   background: linear-gradient(90deg, #5093EC, #4C93F1, #3F85DF);   
 }
 
 .about-me_vertical_stick {
@@ -97,7 +97,7 @@
 .about-me_image_section {
    background-image: url("assets/imgs/section-image-2.webp");
    background-size: cover;
-   background-position: center;
+   background-position: center top;
    background-repeat: no-repeat;
    padding-bottom: 30rem;
    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
