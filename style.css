@@ -8,6 +8,7 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-attachment: fixed;
+   background-position: center;
    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
    position: relative;
    z-index: 5000;
@@ -96,6 +97,7 @@
 .about-me_image_section {
    background-image: url("assets/imgs/section-image-2.webp");
    background-size: cover;
+   background-position: center;
    background-repeat: no-repeat;
    padding-bottom: 30rem;
    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
@@ -121,7 +123,9 @@
 .routes {
    background-image: url("assets/imgs/section-image-3.webp");
    background-size: cover;
+   background-attachment: fixed;
    background-repeat: no-repeat;
+   background-position: 40%;
    margin-top: -20rem;
    padding-bottom: 20rem;
 
@@ -215,9 +219,11 @@
 /* OUR_GUIDES SECTION */
 .our-guides {
    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
-   
+   background-attachment: fixed;
    background-image: url("assets/imgs/section-image-4.webp");
    background-size: cover;
+   background-position: 100% 40%;
+
    margin-top: -22rem;
    padding-top: 35rem;
    padding-bottom: 3rem;
@@ -335,8 +341,11 @@
 /* CONTACT-FORM SECTION */
 .contact-form {
    background-image: url("assets/imgs/section-image-5.webp");
+   background-attachment: fixed;
    background-size: cover;
    background-repeat: no-repeat;
+   background-position: center;
+   
 }
 
 .contact-form_bg {
