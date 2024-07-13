@@ -1,0 +1,15 @@
+main {
+   min-height: 100vh;
+   background-image: var(--image-card);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+/* SECTION MAIN-INFORMATION */
+.main-information {
+   
+}
+

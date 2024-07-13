@@ -4,7 +4,7 @@
    opacity: 0;
    pointer-events: none;
    display: flex;
-   position: fixed;
+   position: sticky;
    top: 0;
    width: 100%;
    z-index: 9999;
@@ -89,3 +89,10 @@
       pointer-events: auto;
    }
 }
+
+@media screen and (max-width: 50rem) {
+   .menu-desktop {
+      display: none;
+   }
+}
+
