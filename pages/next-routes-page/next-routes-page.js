@@ -22,7 +22,7 @@ const insertRoutes = (routes) => {
    $next_routes_cards_content.appendChild($fragment);
    moveMouseScroll();
    changeImage();
-   
+   setDefaultRoute();
 }
 
 const getRoutes = async () => {
@@ -31,6 +31,17 @@ const getRoutes = async () => {
       let {done, value} = await readerRoutes.read();
       insertRoutes(value);
    }
+}
+
+const setDefaultRoute = () => {
+   const $next_routes_image = d.querySelector(".next-routes_image");
+   const $first_next_routes_card =  d.querySelector(".next-routes_card");
+
+   $next_routes_image.setAttribute("style", $first_next_routes_card.getAttribute("style"));
+   $next_routes_image.querySelector(".next-routes_image_name_route").innerHTML = $first_next_routes_card.getAttribute("data-name").toUpperCase();
+
+   $next_routes_image.setAttribute("href", `${$next_routes_image.getAttribute('href')}#${$first_next_routes_card.getAttribute("data-id")}`);
+
 }
 
 d.addEventListener("click", (e) => {
@@ -58,8 +69,11 @@ d.addEventListener("click", (e) => {
 
 });
 
-waitForAnimationMenuMovilByChangeCurrentUrl();
-getRoutes();
+d.addEventListener("DOMContentLoaded", () => {
+   waitForAnimationMenuMovilByChangeCurrentUrl();
+   getRoutes();
+   
+})
 
 
 
