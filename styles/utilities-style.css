@@ -45,3 +45,7 @@
    font-size: 2rem;
    transition: opacity linear 300ms;
 }
+
+.pi-none {
+   pointer-events: none;
+}

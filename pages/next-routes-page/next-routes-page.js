@@ -1,13 +1,14 @@
 import toggleMenuMovil from "../../scripts/toggle-menu-script.js";
 import waitForAnimationMenuMovilByChangeCurrentUrl from "../../scripts/wait-for-animation-menu-movil-by-change-current-url-script.js"
 import { moveMouseScroll, changeImage} from "../../scripts/move-scroll-with-mouse.js";
-import { getDocsRoutesByLimit } from "../../scripts/routes.script.js"
+import { getDocsRoutesByLimit, addDocsRoutesByLots } from "../../scripts/routes.script.js"
 
 const d = document;
 
 const insertRoutes = (routes) => {
    let $fragment = document.createDocumentFragment();
    let $next_routes_cards_content = document.querySelector(".next-routes_cards_content");
+   d.querySelectorAll(".next-routes_card").forEach(el => el.remove());
 
    routes.forEach(route => {
       let $articleNextRoutesCard = document.createElement("article");
@@ -42,6 +43,8 @@ const setDefaultRoute = () => {
 
    $next_routes_image.setAttribute("href", `${$next_routes_image.getAttribute('href')}#${$first_next_routes_card.getAttribute("data-id")}`);
 
+   $next_routes_image.classList.remove("pi-none");
+
 }
 
 d.addEventListener("click", (e) => {
@@ -70,6 +73,7 @@ d.addEventListener("click", (e) => {
 });
 
 d.addEventListener("DOMContentLoaded", () => {
+
    waitForAnimationMenuMovilByChangeCurrentUrl();
    getRoutes();
    

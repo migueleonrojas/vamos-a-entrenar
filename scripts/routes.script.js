@@ -17,7 +17,7 @@ const addDocsRoutesByLots = async () => {
 
 const getDocsRoutesByLimit = () => {
 
-   const queryCollection = query(collection(db, NAME_COLLECTION));
+   const queryCollection = query(collection(db, NAME_COLLECTION), where('active', "==", true));
    let allRoutes = [];
 
    return new ReadableStream({
