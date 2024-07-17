@@ -7,6 +7,7 @@ import renderLocation from "../../scripts/location.js";
 import renderListTextAndSubtext from "../../scripts/list-text-subtext.js";
 import loadIframeMapWikiloc from "../../scripts/load-iframe-map.js"
 import renderClimate from "../../scripts/climate.js"
+import settingSocialMedia from "../../scripts/set-social-media.js"
 import { hideLoader } from "../../scripts/loader.js";
 const d = document;
 const w = window;
@@ -42,21 +43,8 @@ const renderMainInformation = (main_information) => {
    renderHours(start_date, end_date);
    renderLocation(meeting_point)
 
-   
-   
 }
 
-const renderItinerary = (itinerary) => {
-
-   renderListTextAndSubtext(
-      itinerary, 
-      ".itinerary-section_content",
-      "itinerary-section_item",
-      "itinerary-section_text",
-      "itinerary-section_sub_text"
-   );
-
-}
 
 const getRouteById = async () => {
 
@@ -74,6 +62,7 @@ const getRouteById = async () => {
          climate_and_vegetation,
          places_to_visit,
          the_marked_route,
+         equipment_required,
          feeding,
          important_information,
          prohibited,
@@ -83,15 +72,82 @@ const getRouteById = async () => {
 
       setBodyBackGround(image);
       renderMainInformation(main_information);
-      renderItinerary(itinerary);
+      renderListTextAndSubtext(
+         itinerary, 
+         ".itinerary-section_content",
+         "itinerary-section_item",
+         "itinerary-section_text",
+         "itinerary-section_sub_text"
+      );
       loadIframeMapWikiloc(the_marked_route, ".marked-route_iframe")
       renderClimate(
          climate_and_vegetation['climate'],
-         ".climate-and-vegetation-section_vegetation_card_chance_of_rain",
-         ".climate-and-vegetation-section_vegetation_card_humidity",
-         ".climate-and-vegetation-section_vegetation_card_summary",
-         ".climate-and-vegetation-section_vegetation_card_temperature",
-         ".climate-and-vegetation-section_vegetation_card_wind"
+         ".climate-and-vegetation-section_climate_card_chance_of_rain",
+         ".climate-and-vegetation-section_climate_card_humidity",
+         ".climate-and-vegetation-section_climate_card_summary",
+         ".climate-and-vegetation-section_climate_card_temperature",
+         ".climate-and-vegetation-section_climate_card_wind"
+      );
+
+      renderListTextAndSubtext(
+         climate_and_vegetation['vegetation'], 
+         ".climate-and-vegetation-section_vegetation_content",
+         "climate-and-vegetation-section_vegetation_content_item",
+         "climate-and-vegetation-section_vegetation_content_text",
+         "climate-and-vegetation-section_vegetation_content_sub_text"
+      );
+      renderListTextAndSubtext(
+         places_to_visit, 
+         ".places-to-visit_content",
+         "places-to-visit_content_item",
+         "places-to-visit_content_text",
+         "places-to-visit_content_sub_text"
+      );
+
+      renderListTextAndSubtext(
+         equipment_required,
+         ".equipment-required_content",
+         "equipment-required_content_item",
+         "equipment-required_content_text",
+         "equipment-required_content_sub_text"
+      );
+
+      renderListTextAndSubtext(
+         feeding,
+         ".feeding_content",
+         "feeding_content_item",
+         "feeding_content_text",
+         "feeding_content_sub_text"
+      );
+
+      renderListTextAndSubtext(
+         important_information,
+         ".important-instructions_content",
+         "important-instructions_content_item",
+         "important-instructions_content_text",
+         "important-instructions_content_sub_text"
+      );
+
+      renderListTextAndSubtext(
+         prohibited,
+         ".prohibited_content",
+         "prohibited_content_item",
+         "prohibited_content_text",
+         "prohibited_content_sub_text"
+      );
+
+      renderListTextAndSubtext(
+         terms_and_conditions,
+         ".terms-and-conditions_content",
+         "prohibited_content_item",
+         "prohibited_content_text",
+         "prohibited_content_sub_text"
+      );
+
+      settingSocialMedia(
+         ".our-networks_link",
+         our_networks[0]['profile'],
+         our_networks[0]['link']
       );
 
 

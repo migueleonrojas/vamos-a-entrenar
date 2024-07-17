@@ -227,6 +227,9 @@
 
 /* SECTION CLIMATE AND VEGETATION */
 
+
+/* CLIMATE */
+
 .climate-and-vegetation-section {
 
    padding-top: 3rem;
@@ -242,6 +245,7 @@
 }
 
 .climate-and-vegetation-section_climate > h2 {
+   grid-column: span 1;
    padding-top: 3rem;
    margin: 0;
    color: #ffffff;
@@ -250,17 +254,17 @@
 
 }
 
-.climate-and-vegetation-section_vegetation {
+.climate-and-vegetation-section_climate {
    display: grid;
    width: 95vw;
-   margin: 2rem auto auto auto;
+   margin: 2rem auto 2rem auto;
    grid-template-columns: repeat(1, 80%);
    justify-content: center;
    gap: 2rem 2rem;
 
 }
 
-.climate-and-vegetation-section_vegetation_card {
+.climate-and-vegetation-section_climate_card {
    padding: 1rem;
    background-color: #ffffffbd;
    border-radius: 2rem;
@@ -269,7 +273,7 @@
 
 }
 
-.climate-and-vegetation-section_vegetation_card > svg {
+.climate-and-vegetation-section_climate_card > svg {
    display: block;
    width: 80%;
    margin: auto;
@@ -277,22 +281,22 @@
  
 }
 
-.climate-and-vegetation-section_vegetation_card > p {
+.climate-and-vegetation-section_climate_card > p {
    color: #000;
    text-align: center;
    font-size: 2rem;
    transition: color linear 300ms;
 }
 
-.climate-and-vegetation-section_vegetation_card:hover {
+.climate-and-vegetation-section_climate_card:hover {
    background-color: #221717b2;
 }
 
-.climate-and-vegetation-section_vegetation_card:hover > svg {
+.climate-and-vegetation-section_climate_card:hover > svg {
    fill: red;
 }
 
-.climate-and-vegetation-section_vegetation_card:hover > p {
+.climate-and-vegetation-section_climate_card:hover > p {
    color: red;
 }
 
@@ -300,21 +304,326 @@
 
 
 @media screen and (min-width: 50rem) {
-   .climate-and-vegetation-section_vegetation {
+
+   .climate-and-vegetation-section_climate > h2 {
+      grid-column: span 2;
+   }
+
+   .climate-and-vegetation-section_climate {
       grid-template-columns: repeat(2, 1fr);
    }
 }
 
 @media screen and (min-width: 70rem) {
-   .climate-and-vegetation-section_vegetation {
+
+   .climate-and-vegetation-section_climate > h2 {
+      grid-column: span 3;
+   }
+
+   .climate-and-vegetation-section_climate {
       grid-template-columns: repeat(3, 1fr);
    }
 }
+
+/* VEGETATION */
+.climate-and-vegetation-section_vegetation {
+    background-color: #0000007a;
+}
+
+.climate-and-vegetation-section_vegetation > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+}
+
+.climate-and-vegetation-section_vegetation_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+}
+
+
+@media screen and (min-width: 50rem) {
+   .climate-and-vegetation-section_vegetation_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .climate-and-vegetation-section_vegetation_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* SECTION PLACES TO VISIT */
+.places-to-visit {
+   background-color: #000000b6;
+}
+
+.places-to-visit > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+}
+
+.places-to-visit_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .places-to-visit_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .places-to-visit_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+
+/* SECTION EQUIPMENT REQUIRED */
+.equipment-required {
+   background-color: #000000b6;
+}
+
+.equipment-required > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+}
+
+.equipment-required_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .equipment-required_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .equipment-required_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* SECTION FEEDING */
+.feeding {
+   background-color: #000000b6;
+}
+
+.feeding > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+}
+
+.feeding_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .feeding_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .feeding_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* SECTION IMPORTANT INSTRUCTIONS */
+.important-instructions {
+   background-color: #000000b6;
+}
+
+.important-instructions > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+   color: #f00;
+}
+
+.important-instructions_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .important-instructions_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .important-instructions_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+
+/* SECTION PROHIBITEC */
+.prohibited {
+   background-color: #000000b6;
+}
+
+.prohibited > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+   color: #f00;
+
+}
+
+.prohibited_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .prohibited_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .prohibited_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* SECTION TERMS AND CONDITIONS */
+.terms-and-conditions {
+   background-color: #000000b6;
+}
+
+.terms-and-conditions > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+   color: #f00;
+
+}
+
+.terms-and-conditions_content {
+   display: grid;
+   gap: 2rem 2rem;
+   max-width: 90%;
+   margin: auto;
+   justify-content: center; 
+   font-size: 1.3rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+@media screen and (min-width: 50rem) {
+   .terms-and-conditions_content {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media screen and (min-width: 70rem) {
+   .terms-and-conditions_content {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* SECTION OUR-NETWORKS */
+
+.our-networks {
+   background-color: #000000b6;
+   padding-bottom: 2rem;
+}
+
+.our-networks > h2 {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   font-size: 4rem;
+   margin: 0;
+   text-align: center;
+   word-break: break-all;
+}
+
+.our-networks_link {
+   display: block;
+   font-size: 3rem;
+   text-align: center;
+   color: #fff;
+   transition: color linear 300ms;
+}
+
+.our-networks_link:hover {
+   color: #da00b4;
+}
+
 
 /* Utilities detail route */
 .main-information_calendar_number_of_week_selected {
    background-color: #00ff00;
    color: #fff;
    font-weight: bold;
-
 }
+
+
+
