@@ -6,6 +6,7 @@ import { renderHours } from "../../scripts/hours.js";
 import renderLocation from "../../scripts/location.js";
 import renderListTextAndSubtext from "../../scripts/list-text-subtext.js";
 import loadIframeMapWikiloc from "../../scripts/load-iframe-map.js"
+import renderClimate from "../../scripts/climate.js"
 import { hideLoader } from "../../scripts/loader.js";
 const d = document;
 const w = window;
@@ -15,7 +16,6 @@ const setBodyBackGround = (urlImg) => {
 
    const $main = d.querySelector(".main");
    $main.style.backgroundImage = `url(${urlImg})`;
-   /* $main.setAttribute("style", urlImg); */
 };
 
 const renderMainInformation = (main_information) => {
@@ -85,6 +85,16 @@ const getRouteById = async () => {
       renderMainInformation(main_information);
       renderItinerary(itinerary);
       loadIframeMapWikiloc(the_marked_route, ".marked-route_iframe")
+      renderClimate(
+         climate_and_vegetation['climate'],
+         ".climate-and-vegetation-section_vegetation_card_chance_of_rain",
+         ".climate-and-vegetation-section_vegetation_card_humidity",
+         ".climate-and-vegetation-section_vegetation_card_summary",
+         ".climate-and-vegetation-section_vegetation_card_temperature",
+         ".climate-and-vegetation-section_vegetation_card_wind"
+      );
+
+
       hideLoader();
    }
 }
