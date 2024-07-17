@@ -273,15 +273,15 @@
    display: block;
    width: 80%;
    margin: auto;
-   transition: color 300ms linear;
-
+   transition: color linear 300ms;
+ 
 }
 
 .climate-and-vegetation-section_vegetation_card > p {
    color: #000;
    text-align: center;
    font-size: 2rem;
-   transition: color 300ms linear;
+   transition: color linear 300ms;
 }
 
 .climate-and-vegetation-section_vegetation_card:hover {
