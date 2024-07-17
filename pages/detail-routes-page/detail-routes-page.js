@@ -14,7 +14,8 @@ const w = window;
 const setBodyBackGround = (urlImg) => {
 
    const $main = d.querySelector(".main");
-   $main.setAttribute("style", urlImg);
+   $main.style.backgroundImage = `url(${urlImg})`;
+   /* $main.setAttribute("style", urlImg); */
 };
 
 const renderMainInformation = (main_information) => {

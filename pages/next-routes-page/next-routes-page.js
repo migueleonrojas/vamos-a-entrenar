@@ -9,6 +9,7 @@ const d = document;
 const insertRoutes = (routes) => {
    let $fragment = document.createDocumentFragment();
    let $next_routes_cards_content = document.querySelector(".next-routes_cards_content");
+   
    d.querySelectorAll(".next-routes_card").forEach(el => el.remove());
 
    routes.forEach(route => {
@@ -16,7 +17,8 @@ const insertRoutes = (routes) => {
       $articleNextRoutesCard.classList.add("next-routes_card");
       $articleNextRoutesCard.setAttribute("data-id", route['id']);
       $articleNextRoutesCard.setAttribute("data-name", route['main_information']['name']);
-      $articleNextRoutesCard.setAttribute("style", route['image']);
+      /* $articleNextRoutesCard.setAttribute("style", route['image']); */
+      $articleNextRoutesCard.style.backgroundImage = `url(${route['image']})`;
 
       let $clone = document.importNode($articleNextRoutesCard, true);
       $fragment.appendChild($clone);
@@ -24,7 +26,7 @@ const insertRoutes = (routes) => {
    $next_routes_cards_content.appendChild($fragment);
    moveMouseScroll();
    changeImage();
-   setDefaultRoute();
+   setDefaultRoute(routes[0]['image']);
    hideLoader();
 }
 
@@ -36,15 +38,12 @@ const getRoutes = async () => {
    }
 }
 
-const setDefaultRoute = () => {
+const setDefaultRoute = (image) => {
    const $next_routes_image = d.querySelector(".next-routes_image");
    const $first_next_routes_card =  d.querySelector(".next-routes_card");
-
-   $next_routes_image.setAttribute("style", $first_next_routes_card.getAttribute("style"));
+   $next_routes_image.style.backgroundImage = `url(${image})`;
    $next_routes_image.querySelector(".next-routes_image_name_route").innerHTML = $first_next_routes_card.getAttribute("data-name").toUpperCase();
-
    $next_routes_image.setAttribute("href", `${$next_routes_image.getAttribute('href')}#${$first_next_routes_card.getAttribute("data-id")}`);
-
    $next_routes_image.classList.remove("pi-none");
 
 }

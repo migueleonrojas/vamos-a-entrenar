@@ -38,7 +38,7 @@ article > h1 {
 .next-routes_image {
    position: relative;
    top: 10vh;
-   background-image: var(--image-card);
+   background-image: url(../../assets/icons/reloj-de-arena.gif);
    background-size: cover;
    background-position: right;
    width: 90%;
@@ -112,7 +112,7 @@ article > h1 {
    flex: 0 0 auto; 
    border-radius: 2rem;
    width: 60vw; 
-   background-image: var(--image-card);
+   background-image: url(../../assets/icons/reloj-de-arena.gif);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 50%;

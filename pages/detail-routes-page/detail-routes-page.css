@@ -1,6 +1,6 @@
 .main {
    min-height: 100vh;
-   background-image: var(--image-card);
+   background-image: url(../../assets/icons/reloj-de-arena.gif);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
