@@ -611,6 +611,8 @@
    text-align: center;
    color: #fff;
    transition: color linear 300ms;
+   padding-bottom: 4rem;
+   word-break: break-word;
 }
 
 .our-networks_link:hover {
