@@ -6,6 +6,7 @@ import { renderHours } from "../../scripts/hours.js";
 import renderLocation from "../../scripts/location.js";
 import renderListTextAndSubtext from "../../scripts/list-text-subtext.js";
 import loadIframeMapWikiloc from "../../scripts/load-iframe-map.js"
+import { hideLoader } from "../../scripts/loader.js";
 const d = document;
 const w = window;
 
@@ -39,6 +40,8 @@ const renderMainInformation = (main_information) => {
    renderCalendar(start_date, end_date);
    renderHours(start_date, end_date);
    renderLocation(meeting_point)
+
+   
    
 }
 
@@ -81,7 +84,7 @@ const getRouteById = async () => {
       renderMainInformation(main_information);
       renderItinerary(itinerary);
       loadIframeMapWikiloc(the_marked_route, ".marked-route_iframe")
-      
+      hideLoader();
    }
 }
 

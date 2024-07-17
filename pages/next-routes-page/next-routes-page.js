@@ -2,6 +2,7 @@ import toggleMenuMovil from "../../scripts/toggle-menu-script.js";
 import waitForAnimationMenuMovilByChangeCurrentUrl from "../../scripts/wait-for-animation-menu-movil-by-change-current-url-script.js"
 import { moveMouseScroll, changeImage} from "../../scripts/move-scroll-with-mouse.js";
 import { getDocsRoutesByLimit, addDocsRoutesByLots } from "../../scripts/routes.script.js"
+import { hideLoader } from "../../scripts/loader.js";
 
 const d = document;
 
@@ -24,6 +25,7 @@ const insertRoutes = (routes) => {
    moveMouseScroll();
    changeImage();
    setDefaultRoute();
+   hideLoader();
 }
 
 const getRoutes = async () => {
