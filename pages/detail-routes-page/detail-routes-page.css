@@ -336,6 +336,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
 }
 
 .climate-and-vegetation-section_vegetation_content {
@@ -408,6 +409,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
 }
 
 .equipment-required_content {
@@ -444,6 +446,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
 }
 
 .feeding_content {
@@ -480,6 +483,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
    color: #f00;
 }
 
@@ -518,6 +522,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
    color: #f00;
 
 }
@@ -556,6 +561,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
    color: #f00;
 
 }
@@ -596,6 +602,7 @@
    font-size: 4rem;
    margin: 0;
    text-align: center;
+   word-break: break-word;
 }
 
 .our-networks_link {
@@ -604,10 +611,10 @@
    text-align: center;
    color: #fff;
    transition: color linear 300ms;
-} 
+}
 
 .our-networks_link:hover {
-   color: #da00b4;
+   color: #64206d;
 }
 
 
