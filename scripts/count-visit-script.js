@@ -1,7 +1,11 @@
-import db  from "./../firebase.js";
-import { collection, addDoc } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+import app  from "./../firebase.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+
+const db = getFirestore(app);
 
 const countUserVisit = async () => {
+
+   
 
    let date = new Date();
 

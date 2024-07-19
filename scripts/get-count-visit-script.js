@@ -1,7 +1,8 @@
-import db  from "../firebase.js";
-import { doc, onSnapshot, query, collection } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+import app  from "../firebase.js";
+import { doc, onSnapshot, query, collection, getFirestore } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
 
 const d = document;
+const db = getFirestore(app);
 
 const getCountVisitTotal = () => {
    const queryCollection = query(collection(db, "users"));

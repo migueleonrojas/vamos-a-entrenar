@@ -49,6 +49,7 @@ const insertRoutes = (routes) => {
 }
 
 const getRoutes = async () => {
+   
    const readerRoutes = getDocsRoutesByLimit('next-route').getReader();
    while (true) {
       let {done, value} = await readerRoutes.read();
