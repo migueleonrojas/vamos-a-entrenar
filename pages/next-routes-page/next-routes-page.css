@@ -40,7 +40,7 @@ article > h1 {
    top: 10vh;
    background-image: url(../../assets/icons/reloj-de-arena.gif);
    background-size: cover;
-   background-position: right;
+   background-position: center;
    width: 90%;
    height: 80vh;
    border-radius: 5rem;

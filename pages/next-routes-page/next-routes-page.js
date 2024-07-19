@@ -12,26 +12,44 @@ const insertRoutes = (routes) => {
    
    d.querySelectorAll(".next-routes_card").forEach(el => el.remove());
 
-   routes.forEach(route => {
+   if(routes.length === 0) {
+      d.querySelector(".next-routes_image").style.backgroundImage = `url(../../assets/logo/mountain.png)`;
+      d.querySelector(".next-routes_image_name_route").innerHTML = "ACTUALMENTE NO HAY RUTAS.";
+      hideLoader();
+      return;
+   }
+
+   routes.forEach((route, i) => {
       let $articleNextRoutesCard = document.createElement("article");
       $articleNextRoutesCard.classList.add("next-routes_card");
       $articleNextRoutesCard.setAttribute("data-id", route['id']);
       $articleNextRoutesCard.setAttribute("data-name", route['main_information']['name']);
-      /* $articleNextRoutesCard.setAttribute("style", route['image']); */
       $articleNextRoutesCard.style.backgroundImage = `url(${route['image']})`;
 
+   
       let $clone = document.importNode($articleNextRoutesCard, true);
       $fragment.appendChild($clone);
    });
    $next_routes_cards_content.appendChild($fragment);
-   moveMouseScroll();
-   changeImage();
+   moveMouseScroll(
+      ".next-routes_card", 
+      ".next-routes_cards_content",
+      ".next-routes_button.to-the-right",
+      ".next-routes_button.to-the-left",
+   );
+   changeImage(
+      ".next-routes_card", 
+      ".next-routes_cards_content", 
+      ".next-routes_image_name_route",
+      ".next-routes_image"
+   );
    setDefaultRoute(routes[0]['image']);
    hideLoader();
+   d.querySelectorAll(".next-routes_button").forEach(el => el.classList.remove("hide"));
 }
 
 const getRoutes = async () => {
-   const readerRoutes = getDocsRoutesByLimit().getReader();
+   const readerRoutes = getDocsRoutesByLimit('next-route').getReader();
    while (true) {
       let {done, value} = await readerRoutes.read();
       insertRoutes(value);
@@ -39,6 +57,7 @@ const getRoutes = async () => {
 }
 
 const setDefaultRoute = (image) => {
+
    const $next_routes_image = d.querySelector(".next-routes_image");
    const $first_next_routes_card =  d.querySelector(".next-routes_card");
    $next_routes_image.style.backgroundImage = `url(${image})`;
@@ -77,8 +96,8 @@ d.addEventListener("DOMContentLoaded", () => {
 
    /* addDocsRoutesByLots(); */
 
-   waitForAnimationMenuMovilByChangeCurrentUrl();
    getRoutes();
+   waitForAnimationMenuMovilByChangeCurrentUrl();
    
 })
 

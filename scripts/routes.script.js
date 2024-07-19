@@ -1,5 +1,5 @@
 import db  from "./../firebase.js";
-import { writeBatch, doc, collection, onSnapshot, query, where } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+import { writeBatch, doc, collection, onSnapshot, query, where, and } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
 import routes from "../local-variables/routes-variable.js"
 
 const NAME_COLLECTION = "routes";
@@ -15,9 +15,13 @@ const addDocsRoutesByLots = async () => {
    await batch.commit();
 }
 
-const getDocsRoutesByLimit = () => {
+const getDocsRoutesByLimit = (type) => {
 
-   const queryCollection = query(collection(db, NAME_COLLECTION), where('active', "==", true));
+   /* const queryCollection = query(collection(db, NAME_COLLECTION), where('active', "==", true)); */
+   const queryCollection = query(collection(db, NAME_COLLECTION), and(
+      where('active', "==", true),
+      where('type', "==", type)
+   ));
    let allRoutes = [];
 
    return new ReadableStream({

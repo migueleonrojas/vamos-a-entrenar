@@ -1,34 +1,3 @@
-/* ******************* Custom Properties ********************* */
-
-:root {
-   --text-color: #fff;
-   --background-text-color: #5093ee;
-   --background-text-color-opacity: #0000008c;
-   --font: "Raleway", sans-serif;
-}
-
-
-/* ******** Reset ********* */
-
-html {
-   box-sizing: border-box;
-   font-family: var(--font);
-   /* font-size: 16px; */
-   scroll-behavior: smooth;
-}
- 
-*,
-*::after,
-*::before {
-   box-sizing: inherit;
-}
- 
-body {
-   margin: 0;
-   overflow-x: hidden;
-   color: var(--text-color);
-}
-
 /* SECTION UNDER-CONTRUCTION */
 .under-construction {
    height: 100vh;
@@ -53,4 +22,119 @@ body {
 
 article > h1 {
    font-size: 2rem;
+}
+
+
+/* SECTION EXPLORING-ROUTES */
+
+.exploring-routes {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+   background-color: #3F85DF;
+}
+
+.exploring-routes_image {
+   position: relative;
+   top: 10vh;
+   background-image: url(../../assets/icons/reloj-de-arena.gif);
+   background-size: cover;
+   background-position: center;
+   width: 90%;
+   height: 80vh;
+   border-radius: 5rem;
+   text-decoration: none;
+   color: #fff;
+}
+
+.exploring-routes_image_content {
+   width: 100%;
+   height: 100%;
+   background-color: #00000052;
+   cursor: pointer;
+   border-radius: 5rem;
+
+}
+
+
+.exploring-routes_image_title {
+   font-size: 3rem;
+   position: relative;
+   right: 4.5%;
+   width: 20%;
+   margin: 0;
+}
+
+.exploring-routes_image_name_route {
+   font-size: 3rem;
+   text-align: center;
+}
+
+.exploring-routes_cards {
+   top: -5rem;
+   height: 30vh;
+   position: relative;
+   
+}
+
+.exploring-routes_button {
+   position: absolute;
+   top: calc(50% - 20px);
+   display: none;
+}
+
+.exploring-routes_button > svg {
+   cursor: pointer;
+   background-color: #000000;
+   border-radius: 2rem;
+   padding: 0.4rem;
+   transition: background-color 300ms linear ;
+}
+
+.exploring-routes_button > svg:hover { 
+   background-color: #00000057;
+
+}
+
+.exploring-routes_cards_content {
+   display: flex;
+   height: 100%;
+   gap: 0 2rem;
+   width: 100%;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
+}
+
+.exploring-routes_card {
+   cursor: pointer;
+   flex: 0 0 auto; 
+   border-radius: 2rem;
+   width: 60vw; 
+   background-image: url(../../assets/icons/reloj-de-arena.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 50%;
+   margin-bottom: 1rem;
+}
+
+@media screen and (min-width:50rem) {
+   
+   .exploring-routes_button  {
+      display: block;
+   }
+
+   .exploring-routes_card {
+      width: 40vw;
+   }
+}
+
+
+/* Utilities */
+.to-the-left {
+   left: 3%;
+}
+.to-the-right {
+   right: 3%;
 }

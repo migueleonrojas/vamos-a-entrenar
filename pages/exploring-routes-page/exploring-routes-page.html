@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="../../styles/menu-desktop-style.css">
       <link rel="stylesheet" href="../../styles/menu-movil-style.css">
       <link rel="stylesheet" href="../../styles/utilities-style.css">
+      <link rel="stylesheet" href="../../styles/loader-style.css">
       <link rel="stylesheet" href="exploring-routes-page.css">
       <link rel="favicon" href="https://migueleonrojas.github.io/entrena-conmigo/en-el-avila/assets/logo/icon-mountain.ico" />
       <link rel="apple-touch-icon" href="https://migueleonrojas.github.io/entrena-conmigo/en-el-avila/assets/logo/icon-mountain.ico" />
@@ -79,11 +80,56 @@
          </article>
          
       </aside>
+
+      <aside class="loader">
+         <article class="loader_left"></article>
+         <article class="loader_image">
+            <img src="../../assets/icons/reloj-de-arena.gif" alt="" srcset="">
+         </article>
+         <article class="loader_right"></article>
+      </aside>
+
+
       <main>
-         <section class="under-construction">
+         <!-- <section class="under-construction">
             <article>
                <h1>PÁGINA DE RUTAS EXPLORATORIAS EN CONSTRUCCIÓN</h1>
             </article>
+         </section> -->
+         <section class="exploring-routes">
+            <a href="../detail-routes-page/detail-routes-page.html" class="exploring-routes_image pi-none">
+               <article class="exploring-routes_image_content">
+                  <h2 class="exploring-routes_image_title">LAS RUTAS EXPLORATORIAS</h2>
+                  <h2 class="exploring-routes_image_name_route" >CARGANDO LAS RUTAS POR FAVOR ESPERE...</h2>
+               </article>
+               <aside class="exploring-routes_cards">
+                  <span class="exploring-routes_button to-the-left hide">
+                     <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="40px" 
+                        viewBox="-200 -960 960 960" 
+                        width="40px" 
+                        fill="#e8eaed"
+                     >
+                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/>
+                     </svg>
+                  </span>
+                  <span class="exploring-routes_button to-the-right hide">
+                     <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="40px" 
+                        viewBox="0 -960 960 960" 
+                        width="40px" 
+                        fill="#e8eaed"
+                     >
+                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/>
+                     </svg>
+                  </span>
+                  
+                  <aside class="exploring-routes_cards_content">                    
+                  </aside>
+               </aside>
+            </a>            
          </section>
       </main>
       <script type="module" src="exploring-routes-page.js"></script>
