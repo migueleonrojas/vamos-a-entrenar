@@ -69,6 +69,7 @@ article > h1 {
 .next-routes_image_name_route {
    font-size: 3rem;
    text-align: center;
+   word-break: break-word;
 }
 
 .next-routes_cards {

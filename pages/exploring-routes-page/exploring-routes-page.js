@@ -14,7 +14,7 @@ const insertRoutes = (routes) => {
 
    if(routes.length === 0) {
       d.querySelector(".exploring-routes_image").style.backgroundImage = `url(../../assets/logo/mountain.png)`;
-      d.querySelector(".exploring-routes_image_name_route").innerHTML = "ACTUALMENTE NO HAY RUTAS EXPLORATORIAS.";
+      d.querySelector(".exploring-routes_image_name_route").innerHTML = "ACTUALMENTE NO HAY RUTAS A EXPLORAR.";
       hideLoader();
       return;
    }
