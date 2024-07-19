@@ -10,10 +10,9 @@ const renderListTextAndSubtext = (
 
    const list = listTextAndSubtext;
    const $parent = d.querySelector(classParent);
+   $parent.innerHTML = "";
    let $fragment = document.createDocumentFragment();
-
-   d.querySelectorAll(classChild).forEach(el => el.remove());
-
+   
    list.forEach((el, index) => {
 
       const { text, sub_text } = el;

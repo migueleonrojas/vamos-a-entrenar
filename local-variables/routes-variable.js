@@ -1,12 +1,12 @@
 const routes = [
-   {
+   /* {
       "id": 1,
       "difficulty": 7,
       "active": true,
       "type": "next-route",
       "modality": "Excursión",
       "enviroment": "Montaña",
-      "image": "--image-card:url(https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fdos-banderas.webp?alt=media&token=a36a8383-c1fb-47cf-83b7-b55533919235);",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fdos-banderas.webp?alt=media&token=a36a8383-c1fb-47cf-83b7-b55533919235",
       "main_information": {
 			"name": "Dos Banderas.",
 			"description": "Excursión a Topo Dos Banderas.",
@@ -116,7 +116,7 @@ const routes = [
 				"sub_text": []
 			},
       ],
-      "the_marked_route": "https://es.wikiloc.com/rutas-senderismo/dos-banderas-177461954",
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=177461954&elevation=off&images=off&maptype=H",
       "equipment_required": [
          {
 				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
@@ -267,7 +267,7 @@ const routes = [
       "type": "next-route",
       "modality": "Excursión",
       "enviroment": "Montaña",
-      "image": "--image-card:url(https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fpiedra-del-indio.webp?alt=media&token=3ee456e6-f7bb-4d9b-8f35-546bae728d4b);",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fpiedra-del-indio.webp?alt=media&token=3ee456e6-f7bb-4d9b-8f35-546bae728d4b",
       "main_information": {
 			"name": "Piedra del Indio y Pozos de Paraiso",
 			"description": "Excursión a Piedra del Indio y a los Pozos de Paraiso.",
@@ -375,7 +375,7 @@ const routes = [
 				"sub_text": []
 			},
       ],
-      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=176963019&elevation=off&images=off&maptype=H",
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=16262799&elevation=on&images=on&maptype=H",
       "equipment_required": [
          {
 				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
@@ -522,7 +522,7 @@ const routes = [
       "type": "next-route",
       "modality": "Excursión",
       "enviroment": "Montaña",
-      "image": "--image-card:url(https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fsabas-nieves-humboldt.webp?alt=media&token=8a0728c3-3c56-4bd5-851d-aac50e2e7ef6);",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fsabas-nieves-humboldt.webp?alt=media&token=8a0728c3-3c56-4bd5-851d-aac50e2e7ef6",
       "main_information": {
 			"name": "Humboldt desde Sabas Nieves",
 			"description": "Excursión al Humboldt desde Sabas Nieves",
@@ -636,7 +636,7 @@ const routes = [
 				"sub_text": []
 			},
       ],
-      "the_marked_route": "https://es.wikiloc.com/rutas-senderismo/avila-sabasnieves-humboldt-2397311",
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=2397311&elevation=on&images=on&maptype=H",
       "equipment_required": [
          {
 				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
@@ -777,7 +777,242 @@ const routes = [
 				"link": "https://www.instagram.com/migueleonrojas/"
 			},
 		]
+   }, */
+   {
+      "id": 4,
+      "difficulty": 7,
+      "active": true,
+      "type": "next-route",
+      "modality": "Excursión",
+      "enviroment": "Montaña",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fcabeza-de-elefante.webp?alt=media&token=8e0daa34-7810-4184-bbe5-7a5cdfc7a447",
+      "main_information": {
+			"name": "Cabeza de Elefante desde Sebucán",
+			"description": "Excursión Cabeza de Elefante",
+			"location": "Ubicado en el Parque Nacional Waraira Repano. sector Sebucán.⛰️",
+			"start_date": new Date(2024, 7, 27, 8, 0, 0, 0),
+			"end_date": new Date(2024, 7, 27, 15, 0, 0, 0),
+			"meeting_point": "Entrada Posterior del Centro Comercial del Millenium"
+		},
+      "itinerary": [
+         {
+				"text": `Ascenderemos por toda la Avenida Sucre hasta llegar a la cota mil`,
+				"sub_text": []
+			},
+			{
+				"text": `Desde la cota mil caminamos un tramo hasta la entrada del Sector Sebucán`,
+				"sub_text": []
+			},
+			{
+				"text": `Desde el Sector Sebucán hasta la Piedra del Indio son como 3 horas como máximo.`,
+				"sub_text": []
+			},
+			{
+				"text": `En Piedra del Indio tomaremos un descanso prudencial y proseguiremos.`,
+				"sub_text": []
+			},
+			{
+				"text": `El tramo que viene es muy expuesto al sol, tiene un grado de inclinación muy considerable, por eso vamos a ir a paso suave, este tramo se pudiera realizar en 2 horas como máximo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Al llegar a Cabeza de Elefante descansaremos, es un mirador que tiene al frente una caida de aproximadamente 500 metros`,
+				"sub_text": []
+			},
+			{
+				"text": `Al momento de tomar las respectivas fotos, tendremos precaución con estar muy cerca del borde del acantilado.`,
+				"sub_text": []
+			},
+			{
+				"text": `Luego para el descenso retornaremos a Piedra del Indio, Sector Sebucán, Cota mil y bajaremos por la Avenida Sucre hasta llegar al Centro Comercial el Millenium.`,
+				"sub_text": []
+			}
+      ],
+      "climate_and_vegetation": {
+			"climate": {
+				"chance_of_rain": "El clima para la fecha convocada: 20% de probabilidades de Lluvia.",
+				"temperature": "Temperatura: 19º a 29º 🌡.",
+				"humidity": "Humedad: 73% 💧.",
+				"wind": "Viento: a 7 km/h 🌫.",
+				"summary": "Cielo parcialmente cubierto 🌧"
+			},
+			"vegetation": [
+				{
+					"text": `Estaremos en gran parte de la ruta protegidos de los rayos del sol por árboles, hasta llegar a Piedra del Indio.`,
+					"sub_text": []
+				},
+				{
+					"text": `Desde Piedra del Indio hasta Cabeza de Elefante, la vegetación es de sabana, muy caluroso, expuesto al sol.`,
+					"sub_text": []
+				},
+				{
+					"text": `Tramos con un grado de inclinación alto.`,
+					"sub_text": []
+				},
+
+         ]
+		},
+      "places_to_visit": [
+         {
+				"text": `Piedra del Indio.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cabeza de Elefante.`,
+				"sub_text": []
+			}
+      ],
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=177799591&elevation=on&images=on&maptype=H",
+      "equipment_required": [
+         {
+				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
+				"sub_text": []
+			},
+			{
+				"text": `Gorra o sombrero 🧢👒.`,
+				"sub_text": []
+			},
+			{
+				"text": `Zapatos montañeros 👟🥾.`,
+				"sub_text": []
+			},
+			{
+				"text": `Franela Deportiva de Secado Rápido que sea manga larga preferiblemente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Pantalon deportivo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Protector solar.`,
+				"sub_text": []
+			},
+			{
+				"text": `Repelente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar impermeable ya que el clima varía sin previo aviso.`,
+				"sub_text": []
+			},
+			{
+				"text": `Lentes de sol 🕶.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar bolsas plásticas (para proteger la ropa y aparatos electrónicos📲📷🔦).`,
+				"sub_text": []
+			},
+			{
+				"text": `Traje de Baño.`,
+				"sub_text": []
+			},
+			{
+				"text": `Alguna chaqueta ligera colores que reflejen los rayos del sol (por ejemplo color blanco).(opcional)`,
+				"sub_text": []
+			},
+      ],
+      "feeding": [
+         {
+				"text": `Aliméntese adecuadamente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Frutas 🍌🍉🍊.`,
+				"sub_text": []
+			},
+			{
+				"text": `Snacks: chocolate, barras energéticas, frutos secos.🍭🍬🍫`,
+				"sub_text": []
+			},
+			{
+				"text": `Lleve agua entre 3 litros a 4 litros.`,
+				"sub_text": []
+			},
+      ],
+      "important_information": [
+         {
+				"text": `Debe indicar de donde viene para saber que tan lejos esta del punto de encuentro.`,
+				"sub_text": []
+			},
+			{
+				"text": `Si padece alguna enfermedad, condición médica de importancia o esta tomando algún medicamento, infórmelo con anterioridad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cualquier duda sobre la actividad consulte cuando lo requiera, con gusto le será respondido.`,
+				"sub_text": []
+			},
+			{
+				"text": `Menores de edad deben asistir con su representante. `,
+				"sub_text": []
+			},
+			{
+				"text": `Ruta con dificultad alta.`,
+				"sub_text": []
+			},
+         {
+				"text": `Ruta muy expuesta al sol en el tramo más dificil`,
+				"sub_text": []
+			},
+         {
+				"text": `Tener precaución con un posible choque de calor, todo va depender del clima de ese día.`,
+				"sub_text": []
+			},
+      ],
+      "prohibited": [
+         {
+				"text": `🤸🏼‍♂️ Actos imprudentes que coloquen el riesgo su integridad física o la de otros participantes, recuerde no contamos con paramédico ni seguro para la actividad.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Desviarse de la ruta demarcada.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ingesta de sustancias alcohólicas, estupefacientes y psicotrópicas.`,
+				"sub_text": []
+			},
+			{
+				"text": `🚯Arrojar basura en el trayecto de la ruta, cualquier desperdicio debe guardarlo en su mochila para ser depositado solo en los sitios adecuados para ello.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `El ritmo de caminata grupal es suave, por lo que no debe adelantarse, atrasarse o alejarse del grupo.`,
+				"sub_text": []
+			},
+      ],
+      "terms_and_conditions": [
+         {
+				"text": `Si usted confirma su participación está aceptando cada uno de los términos y condiciones.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cumplir cada una de las recomendaciones, prohibiciones dadas para la actividad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Datos que debe suministrar: Nombres, Apellidos, N- cédula, un número de contacto de familiar o persona cercana (Solo será usado en caso de emergencia).
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Debe estar siempre atento y cumplir las indicaciones.`,
+				"sub_text": []
+			},
+      ],
+      "our_networks": [
+			{
+				"name":"Intagram",
+				"profile": "@migueleonrojas",
+				"link": "https://www.instagram.com/migueleonrojas/"
+			},
+		]
    },
+   
 ];
 
 export default routes;

@@ -75,6 +75,8 @@ d.addEventListener("click", (e) => {
 
 d.addEventListener("DOMContentLoaded", () => {
 
+   /* addDocsRoutesByLots(); */
+
    waitForAnimationMenuMovilByChangeCurrentUrl();
    getRoutes();
    
