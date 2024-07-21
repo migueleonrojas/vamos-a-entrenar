@@ -10,15 +10,17 @@ const renderDayOfMonth = (start, end, start_selected, end_selected) => {
    for(let i = -start; i <= end; i++) {
 
       let $main_information_calendar_number_of_week = document.createElement("span");
+      $main_information_calendar_number_of_week.classList.add("main-information_calendar_number_of_week");
+      $main_information_calendar_number_of_week.innerHTML = i;
       
       if(i >= 1) {
-         $main_information_calendar_number_of_week.classList.add("main-information_calendar_number_of_week");
-         $main_information_calendar_number_of_week.innerHTML = i;
-
-
+         
          if(i >= start_selected && i <= end_selected) {
             $main_information_calendar_number_of_week.classList.add("main-information_calendar_number_of_week_selected");
          }
+      }
+      else {
+         $main_information_calendar_number_of_week.classList.add("hide");
 
       }
       
@@ -26,7 +28,6 @@ const renderDayOfMonth = (start, end, start_selected, end_selected) => {
       $fragment.appendChild($clone); 
 
    }
-
    $main_information_calendar_content.appendChild($fragment);
 }
 
