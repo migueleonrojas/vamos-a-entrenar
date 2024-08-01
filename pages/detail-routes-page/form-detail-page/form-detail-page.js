@@ -10,7 +10,6 @@ import generateTicketInPdf from "../../../scripts/generate-ticket.js";
 import { topOffSetElement } from "../../../utils/offset-element.js";
 import { generateCodeTwoFactor, validateCode } from "../../../scripts/generate-two-factor.js";
 import { requestPermissionNotification, showNotification } from "../../../scripts/generate-notification.js"
-
 const d = document;
 const w = window;
 let code = '';
