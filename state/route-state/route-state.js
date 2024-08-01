@@ -12,6 +12,7 @@ export default class RouteState {
 
    #route = {
       "id": "",
+      "active": false,
       "difficulty": 0,
       "type": "",
       "modality": "",

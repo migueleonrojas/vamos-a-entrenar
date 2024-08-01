@@ -9,8 +9,10 @@ import loadIframeMapWikiloc from "../../scripts/load-iframe-map.js"
 import renderClimate from "../../scripts/climate.js"
 import settingSocialMedia from "../../scripts/set-social-media.js"
 import { hideLoader } from "../../scripts/loader.js";
+import RouteState from "../../state/route-state/route-state.js"
 const d = document;
 const w = window;
+let currentRoute = {};
 
 
 const setBodyBackGround = (urlImg) => {
@@ -53,6 +55,8 @@ const getRouteById = async () => {
    const readerRouteById = getDocRouteById(hashId).getReader();
    while (true) {
       let {done, value} = await readerRouteById.read();
+
+      currentRoute = value;
 
       const {
          difficulty,
@@ -174,6 +178,12 @@ d.addEventListener("click", (e) => {
    if(e.target.matches(`.menu-movil_sub_menu_content > a`)) {
       toggleMenuMovil();
    }
+
+   if(e.target.matches(`.reserve > a`)) {
+      e.preventDefault();
+      new RouteState(currentRoute);
+      window.location.href = "./form-detail-page/form-detail-page.html";
+   }  
 
 });
 

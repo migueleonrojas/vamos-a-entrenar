@@ -2,7 +2,7 @@ import validateInputs from "./scripts/validate-input-script.js";
 import toggleMenuMovil from "./scripts/toggle-menu-script.js";
 import { canCountVisit, countUserVisit } from "./scripts/count-visit-script.js";
 import getCountVisitTotal from "./scripts/get-count-visit-script.js";
-import sendMail from "./scripts/send-mail-script.js";
+import { sendMailContact } from "./scripts/send-mail-script.js";
 import waitForAnimationMenuMovilByChangeCurrentUrl from "./scripts/wait-for-animation-menu-movil-by-change-current-url-script.js"
 
 const d = document;
@@ -28,7 +28,18 @@ $form.addEventListener("submit", (e) => {
       return false;
    }
    window.scroll(0, d.body.offsetHeight);
-   sendMail();
+   sendMailContact(
+      d.querySelector(".contact-form_loader"),
+      d.querySelector(".contact-form_form"),
+      d.querySelector(".span_success_send"),
+      {
+         name: `Nombre: ${$form.nombre.value} | Correo: ${$form.correo.value}`,
+         message: `Asunto: ${$form.asunto.value}\nComentario:\n${$form.comentario.value}`,
+      }
+   );
+
+   
+   
 });
 
 

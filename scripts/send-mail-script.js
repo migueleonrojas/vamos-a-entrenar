@@ -1,33 +1,33 @@
 const d = document;
+const URL = 'https://formsubmit.co/ajax/migueleonrojas@gmail.com';
 
-const sendMail = async () => {
-   let $loader = d.querySelector(".contact-form_loader");
-   let $form = d.querySelector(".contact-form_form");
-   let $span = d.querySelector(".span_success_send");
-   $loader.classList.remove("hide");
+const sendMailContact = async (
+   $loaderElement,
+   $formElement,
+   $spanElement,
+   bodyJsonMsg
+) => {
+   $loaderElement.classList.remove("hide");
 
    try {
-      let res = await fetch('https://formsubmit.co/ajax/migueleonrojas@gmail.com',{
+      let res = await fetch(URL,{
          method: 'POST',
          headers: {
              'Content-Type' : 'application/json',
              'Accept' : 'application/json'
          },
-         body: JSON.stringify({
-             name: `Nombre: ${$form.nombre.value} | Correo: ${$form.correo.value}`,
-             message: `Asunto: ${$form.asunto.value}\nComentario:\n${$form.comentario.value}`,
-         })
+         body: JSON.stringify(bodyJsonMsg)
       }),
       json = await res.json();
-      $span.classList.add("span_success_send");
-      $loader.classList.add("hide");
-      $span.innerHTML = 'Se ha mandado el correo con éxito';
-      $span.classList.remove("hide");
-      $form.reset();
-      $span.classList.add("span_success_send");
+      $spanElement.classList.add("span_success_send");
+      $loaderElement.classList.add("hide");
+      $spanElement.innerHTML = 'Se ha mandado el correo con éxito';
+      $spanElement.classList.remove("hide");
+      $formElement.reset();
+      $spanElement.classList.add("span_success_send");
 
       setTimeout(() => { 
-         $span.classList.add("hide");
+         $spanElement.classList.add("hide");
       },3000);
 
       if(json.err) throw {status:res.status, statusText: res.statusText }
@@ -35,18 +35,21 @@ const sendMail = async () => {
    }
    catch(err){
       let message = err.statusText || "El correo no se pudo enviar, intente más tarde";
-      $span.classList.remove("span_success_send");
-      $span.classList.add("span_error_input");
-      $loader.classList.add("hide");
-      $span.innerHTML = message;
-      $span.classList.remove("hide");
+      $spanElement.classList.remove("span_success_send");
+      $spanElement.classList.add("span_error_input");
+      $loaderElement.classList.add("hide");
+      $spanElement.innerHTML = message;
+      $spanElement.classList.remove("hide");
       setTimeout(() => { 
-         $span.classList.add("hide"); 
-         $span.classList.remove("span_error_input");
+         $spanElement.classList.add("hide"); 
+         $spanElement.classList.remove("span_error_input");
       },3000);
-      $form.reset();
+      $formElement.reset();
+      
    }
 
 };
 
-export default sendMail;
+export {
+   sendMailContact
+};
