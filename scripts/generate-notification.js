@@ -11,7 +11,7 @@ const requestPermissionNotification = async () => {
 
       let { message } = err;
 
-      if(message.includes(message)) {
+      if(message.includes('Notificaciones Denegadas')) {
          alert("Las notificaciones han sido denegadas para poder activarlas vaya a la configuración de su navegador");
       }
 
@@ -25,6 +25,10 @@ const requestPermissionNotification = async () => {
 }
 
 const showNotification = (title, msg) => {
+
+   if(Notification.permission === 'denied') {
+      alert(`${title}\n\n${msg}`)
+   }
 
    let notification = new Notification(title, {
       body: msg,
