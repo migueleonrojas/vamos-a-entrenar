@@ -3,7 +3,9 @@ const requestPermissionNotification = async () => {
 
    try{
 
-      if(!("Notification" in window)) throw new Error('Las notificaciones no son soportadas');
+      if(!(Notification in window)) {
+         throw new Error('Las notificaciones no son soportadas');
+      }
 
       if(Notification.permission === 'denied') throw new Error('Notificaciones Denegadas');
       
@@ -34,7 +36,7 @@ const requestPermissionNotification = async () => {
 
 const showNotification = (title, msg) => {
 
-   if(Notification.permission === 'denied') {
+   if(Notification.permission === 'denied' || !(Notification in window)) {
       alert(`${title}\n\n${msg}`)
       return;
    }
