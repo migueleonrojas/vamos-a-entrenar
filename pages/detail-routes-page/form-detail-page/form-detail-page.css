@@ -4,6 +4,15 @@
    text-align: center;
 }
 
+.reservation-form_name_route {
+   font-size: 3rem;
+   color: #fdfdfd;
+   background-color: #000;
+   padding: 1rem 0;
+   margin: 0;
+
+}
+
 .reservation-form > h2 {
    font-size: 3rem;
 }

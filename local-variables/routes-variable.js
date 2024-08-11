@@ -778,7 +778,7 @@ const routes = [
 			},
 		]
    }, */
-   {
+   /* {
       "id": 4,
       "difficulty": 7,
       "active": true,
@@ -960,6 +960,293 @@ const routes = [
 				"text": `Tener precaución con un posible choque de calor, todo va depender del clima de ese día.`,
 				"sub_text": []
 			},
+      ],
+      "prohibited": [
+         {
+				"text": `🤸🏼‍♂️ Actos imprudentes que coloquen el riesgo su integridad física o la de otros participantes, recuerde no contamos con paramédico ni seguro para la actividad.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Desviarse de la ruta demarcada.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ingesta de sustancias alcohólicas, estupefacientes y psicotrópicas.`,
+				"sub_text": []
+			},
+			{
+				"text": `🚯Arrojar basura en el trayecto de la ruta, cualquier desperdicio debe guardarlo en su mochila para ser depositado solo en los sitios adecuados para ello.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `El ritmo de caminata grupal es suave, por lo que no debe adelantarse, atrasarse o alejarse del grupo.`,
+				"sub_text": []
+			},
+      ],
+      "terms_and_conditions": [
+         {
+				"text": `Si usted confirma su participación está aceptando cada uno de los términos y condiciones.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cumplir cada una de las recomendaciones, prohibiciones dadas para la actividad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Datos que debe suministrar: Nombres, Apellidos, N- cédula, un número de contacto de familiar o persona cercana (Solo será usado en caso de emergencia).
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Debe estar siempre atento y cumplir las indicaciones.`,
+				"sub_text": []
+			},
+      ],
+      "our_networks": [
+			{
+				"name":"Intagram",
+				"profile": "@migueleonrojas",
+				"link": "https://www.instagram.com/migueleonrojas/"
+			},
+		]
+   }, */
+   {
+      "id": 5,
+      "difficulty": 7,
+      "active": false,
+      "type": "next-route",
+      "modality": "Excursión",
+      "enviroment": "Montaña",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Floma%20de%20caballo.webp?alt=media&token=3ffcd206-b1e4-4151-bd1b-a67a9033d38f",
+      "main_information": {
+			"name": "Loma de Caballo",
+			"description": "Excursión a la estación abandonada de Loma de Caballo.",
+			"location": "Ubicado en el Parque Nacional Waraira Repano. sector Galipán.⛰️",
+			"start_date": new Date(2024, 7, 17, 9, 30, 0, 0),
+			"end_date": new Date(2024, 7, 17, 18, 0, 0, 0),
+			"meeting_point": "Al frente de los torniquetes de la estación Colegio de Ingenieros."
+		},
+      "itinerary": [
+         {
+				"text": `Tomaremos transporte público desde la estación Colegio de Ingenieros hasta la estación de teleférico de Mariperez.`,
+				"sub_text": []
+			},
+         {
+				"text": `Al llegar nos identificaremos como senderistas ya que tenemos el pago exonerado, aunque si esas políticas han cambiado podemos tomar un jeep que nos llevaría a Galipan el cual tiene un costo aproximado de 5$.`,
+				"sub_text": []
+			},
+         {
+				"text": `Igualmente el teleférico esta en 10$ si pagas en BS; Y 12$ si pagas en Divisas.`,
+				"sub_text": []
+			},
+         {
+				"text": `Sí tomamos el teleférico entonces nos toca ir hacia el Sector Boca de Tigre, sí tomamos el jeep este nos deja en el sector antes mencionado.`,
+				"sub_text": []
+			},
+         {
+				"text": `Desde Boca de Tigre hasta la Estación Loma de Caballo, es pura bajada en concreto, el tiempo de este tramo prevé en 2 horas aproximadamente.`,
+				"sub_text": []
+			},
+         {
+				"text": `Los puntos de referencia que tendremos antes de llegar al destino son:`,
+				"sub_text": [
+               "Un modulo de la Policía Nacional Bolivariana.",
+               "Una Posada llamada IL Picaccio",
+               "Un letrero amarillo que dice 'Recoveco', ahi está el desvío del camino principal para ir a Loma de Caballo",
+            ]
+			},
+         {
+				"text": `Desde el desvío que es un camino de tierra viene bajadas de camino en concreto y tierra suelta.`,
+				"sub_text": []
+			},
+         {
+				"text": `Al llegar nos encontraremos con una estructura de concreto inconclusa y detras, unos metros más adelante esta la Estación de Loma de Caballo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Ahí estaremos un tiempo prudencial ya que nos toca subir todo ese tramo que bajamos desde Boca de Tigre`,
+				"sub_text": []
+			},
+         {
+				"text": `Esta la opción para bajar en Jeep desde el pueblo de Galipan que serían 5$ por persona`,
+				"sub_text": []
+			},
+         {
+				"text": `También se puede subir ese último tramo desde Boca de Tigre hasta la estación de Teleférico.`,
+				"sub_text": []
+			},
+         {
+				"text": `Se prevé terminar la actividad a las 6:00 P.M como máximo.`,
+				"sub_text": []
+			},
+
+			
+      ],
+      "climate_and_vegetation": {
+			"climate": {
+				"chance_of_rain": "El clima para la fecha convocada: 24% de probabilidades de Lluvia.",
+				"temperature": "Temperatura: Hasta 29º 🌡.",
+				"humidity": "Humedad: 70% 💧.",
+				"wind": "Viento: a 7 km/h 🌫.",
+				"summary": "Cielo parcialmente cubierto 🌧"
+			},
+			"vegetation": [
+				{
+					"text": `Estaremos en gran parte de la ruta protegidos de los rayos del sol por árboles, hasta llegar a Piedra del Indio.`,
+					"sub_text": []
+				},
+				{
+					"text": `Desde Piedra del Indio hasta Cabeza de Elefante, la vegetación es de sabana, muy caluroso, expuesto al sol.`,
+					"sub_text": []
+				},
+				{
+					"text": `Tramos con un grado de inclinación alto.`,
+					"sub_text": []
+				},
+
+         ]
+		},
+      "places_to_visit": [
+         {
+				"text": `Estación de Teleférico Mariperez.`,
+				"sub_text": []
+			},
+			{
+				"text": `Galipan`,
+				"sub_text": []
+			},
+			{
+				"text": `Galipan - Boca de Tigre`,
+				"sub_text": []
+			},
+			{
+				"text": `Galipan - Estación de teleférico abandonada de Loma de Caballo.`,
+				"sub_text": []
+			},
+      ],
+      "the_marked_route": "https://www.google.com/maps/embed?pb=!1m24!1m8!1m3!1d15689.250063694706!2d-66.89942773751226!3d10.554699537271548!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x8c2a5bf79021d37f%3A0xd62a8606f0a04f63!2sBoca%20de%20tigre%2C%20G3XX%2BWFJ%2C%20V%C3%ADa%20Galip%C3%A1n%2C%20Caracas%201011%2C%20Distrito%20Capital!3m2!1d10.54984!2d-66.9013545!4m5!1s0x8c2a5b9b42e82805%3A0xb88840c89ad5f96c!2sAntigua%20Estaci%C3%B3n%20de%20Telef%C3%A9rico%20-%20%20Loma%E2%80%A6!3m2!1d10.573694399999999!2d-66.8902554!5e0!3m2!1ses!2sve!4v1723416257887!5m2!1ses!2sve",
+      "equipment_required": [
+         {
+				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
+				"sub_text": []
+			},
+			{
+				"text": `Gorra o sombrero 🧢👒.`,
+				"sub_text": []
+			},
+			{
+				"text": `Zapatos montañeros 👟🥾.`,
+				"sub_text": []
+			},
+			{
+				"text": `Franela Deportiva de Secado Rápido que sea manga larga preferiblemente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Pantalon deportivo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Protector solar.`,
+				"sub_text": []
+			},
+			{
+				"text": `Repelente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar impermeable ya que el clima varía sin previo aviso.`,
+				"sub_text": []
+			},
+			{
+				"text": `Lentes de sol 🕶.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar bolsas plásticas (para proteger la ropa y aparatos electrónicos📲📷🔦).`,
+				"sub_text": []
+			},
+			{
+				"text": `Traje de Baño.`,
+				"sub_text": []
+			},
+			{
+				"text": `Alguna chaqueta ligera colores que reflejen los rayos del sol (por ejemplo color blanco).(opcional)`,
+				"sub_text": []
+			},
+      ],
+      "feeding": [
+         {
+				"text": `Aliméntese adecuadamente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Frutas 🍌🍉🍊.`,
+				"sub_text": []
+			},
+			{
+				"text": `Snacks: chocolate, barras energéticas, frutos secos.🍭🍬🍫`,
+				"sub_text": []
+			},
+			{
+				"text": `Lleve agua entre 2 litros a 3 litros.`,
+				"sub_text": []
+			},
+      ],
+      "important_information": [
+         {
+				"text": `Debe indicar de donde viene para saber que tan lejos esta del punto de encuentro.`,
+				"sub_text": []
+			},
+			{
+				"text": `Si padece alguna enfermedad, condición médica de importancia o esta tomando algún medicamento, infórmelo con anterioridad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cualquier duda sobre la actividad consulte cuando lo requiera, con gusto le será respondido.`,
+				"sub_text": []
+			},
+			{
+				"text": `Menores de edad deben asistir con su representante. `,
+				"sub_text": []
+			},
+			{
+				"text": `Ruta con dificultad media alta.`,
+				"sub_text": []
+			},
+         {
+				"text": `Ruta de concreto en casi en todo el camino.`,
+				"sub_text": []
+			},
+         {
+				"text": `Hay protección de los rayos del sol por arboles altos en un tramo de la ruta`,
+				"sub_text": []
+			},
+         {
+				"text": `Pero también hay un gran tramo donde no hay protección de los rayos del sol`,
+				"sub_text": []
+			},
+         {
+            "text": `Se puede subir a la estructura, pero con mucha precaución:`,
+				"sub_text": [
+               "No estar muchas personas concentrados en un área muy pequeña.",
+               "Si sufres de vertigo no se recomiendo subir.",
+               "Estar pendiente de donde te apoyas porque puedes tocar un metal filoso y oxidado.",
+               "No confiarse en apoyarse en algunos barandales porque no pudieran estar fijos.",
+               "Si vas a dar permiso a que pase alguien no retroceder sin antes mirar hacia atras."
+            ]
+         },
+         {
+            "text": `También esta el área del Sotano al cual se puede bajar con precaucion:`,
+            "sub_text": [
+               "Tener cuidado donde se pisa",
+               "Hay metales oxidados, precaución de no cortarse con ellos.",
+               "Pudieran haber serpientes refugiadas o cualquier otro animal."
+            ]
+         }
+
       ],
       "prohibited": [
          {

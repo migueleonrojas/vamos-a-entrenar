@@ -123,7 +123,7 @@ const getRouteById = async () => {
          "feeding_content_text",
          "feeding_content_sub_text"
       );
-
+      
       renderListTextAndSubtext(
          important_information,
          ".important-instructions_content",
@@ -143,9 +143,9 @@ const getRouteById = async () => {
       renderListTextAndSubtext(
          terms_and_conditions,
          ".terms-and-conditions_content",
-         "prohibited_content_item",
-         "prohibited_content_text",
-         "prohibited_content_sub_text"
+         "terms-and-conditions_item",
+         "terms-and-conditions_text",
+         "terms-and-conditions_sub_text"
       );
 
       settingSocialMedia(
@@ -181,7 +181,8 @@ d.addEventListener("click", (e) => {
 
    if(e.target.matches(`.reserve > a`)) {
       e.preventDefault();
-      new RouteState(currentRoute);
+      let routeState = new RouteState(currentRoute);
+      routeState.route = currentRoute;
       window.location.href = "./form-detail-page/form-detail-page.html";
    }  
 

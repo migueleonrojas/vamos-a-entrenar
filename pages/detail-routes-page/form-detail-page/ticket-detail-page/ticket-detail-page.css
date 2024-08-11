@@ -1,0 +1,84 @@
+/* SECTION TICKET */
+
+.ticket {
+
+}
+
+.ticket > h1 {
+   font-size: 3rem;
+   color: #000;
+   text-align: center;
+}
+
+.ticket > h2 {
+   font-size: 3rem;
+   color: #000;
+   text-align: center;
+}
+
+.ticket-article {
+   color: #000;
+   display: grid;
+   grid-template-columns: repeat(1, 90%);
+   gap:1rem 0rem;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 4rem 0;
+}
+
+.ticket-article > label {
+   text-align: center;
+   font-size: 2rem;
+}
+
+.ticket-article > span {
+   text-align: center;
+   color: #000;
+   padding: 0.5rem 1rem;
+   font-size: 2rem;
+   border: 1px solid #000;
+   word-wrap: break-word;
+}
+
+@media screen and (min-width:50rem) {
+
+   .ticket-article {
+      grid-template-columns: repeat(2, 45%);
+   }
+
+   .ticket-article > label {
+      text-align: left;
+   }
+
+   .ticket-article > span {
+      padding-left: 1rem;
+      text-align: left;
+   }
+   
+}
+
+/* SECTION CONTROLS */
+.controls {
+   display: flex;
+   justify-content: center;
+   padding: 2rem;
+} 
+
+.controls > span {
+   border-radius: 1rem;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: bold;
+   color: #ffffff;
+   background-color: #22a3df;
+   padding: 1rem;
+   cursor: pointer;
+}
+
+
+@media print {
+
+   .controls {
+      display: none;
+   }
+}

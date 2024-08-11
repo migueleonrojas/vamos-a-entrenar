@@ -354,6 +354,20 @@
    font-size: 1.3rem;
 }
 
+.climate-and-vegetation-section_vegetation_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.climate-and-vegetation-section_vegetation_content_text {
+
+}
+
+.climate-and-vegetation-section_vegetation_content_sub_text {
+   padding-left: 2rem;
+}
+
 
 @media screen and (min-width: 50rem) {
    .climate-and-vegetation-section_vegetation_content {
@@ -389,6 +403,20 @@
    font-size: 1.3rem;
    padding-top: 2rem;
    padding-bottom: 2rem;
+}
+
+.places-to-visit_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.places-to-visit_content_text {
+
+}
+
+.places-to-visit_content_sub_text {
+   padding-left: 2rem;
 }
 
 @media screen and (min-width: 50rem) {
@@ -429,6 +457,20 @@
    padding-bottom: 2rem;
 }
 
+.equipment-required_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.equipment-required_content_text {
+
+}
+
+.equipment-required_content_sub_text {
+   padding-left: 2rem;
+}
+
 @media screen and (min-width: 50rem) {
    .equipment-required_content {
       grid-template-columns: repeat(2, 1fr);
@@ -464,6 +506,20 @@
    font-size: 1.3rem;
    padding-top: 2rem;
    padding-bottom: 2rem;
+}
+
+.feeding_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.feeding_content_text {
+
+}
+
+.feeding_content_sub_text {
+   padding-left: 2rem;
 }
 
 @media screen and (min-width: 50rem) {
@@ -502,6 +558,20 @@
    font-size: 1.3rem;
    padding-top: 2rem;
    padding-bottom: 2rem;
+}
+
+.important-instructions_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.important-instructions_content_text {
+
+}
+
+.important-instructions_content_sub_text {
+   padding-left: 2rem;
 }
 
 @media screen and (min-width: 50rem) {
@@ -544,6 +614,20 @@
    padding-bottom: 2rem;
 }
 
+.prohibited_content_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.prohibited_content_text {
+
+}
+
+.prohibited_content_sub_text {
+   padding-left: 2rem;
+}
+
 @media screen and (min-width: 50rem) {
    .prohibited_content {
       grid-template-columns: repeat(2, 1fr);
@@ -581,6 +665,20 @@
    font-size: 1.3rem;
    padding-top: 2rem;
    padding-bottom: 2rem;
+}
+
+.terms-and-conditions_item {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem 0rem;
+}
+
+.terms-and-conditions_text {
+
+}
+
+.terms-and-conditions_sub_text {
+   padding-left: 2rem;
 }
 
 @media screen and (min-width: 50rem) {

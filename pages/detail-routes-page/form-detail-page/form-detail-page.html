@@ -60,7 +60,7 @@
 
    <main>
       <section class="reservation-form">
-
+         <h1 class="reservation-form_name_route"></h1>
          <h2>Para generar su boleto, ingrese los siguientes datos</h2>
 
          <form id="form" class="reservation-form_form">
@@ -104,11 +104,11 @@
                <h2>Contacto de Emergencia (Sólo se usara en caso de emergencia):</h2>
                <aside class="reservation-form_aside">
                   <label for="name-emergency">Nombre</label>
-                  <input id="name-emergency" type="text" name="nombre" placeholder="Nombre">
+                  <input id="name-emergency" type="text" name="nombre emergencia" placeholder="Nombre">
                </aside>
                <aside class="reservation-form_aside">
                   <label for="phone-emergency">Teléfono</label>
-                  <input id="phone-emergency" type="tel" name="teléfono" placeholder="Teléfono">
+                  <input id="phone-emergency" type="tel" name="teléfono emergencia" placeholder="Teléfono">
                </aside>
             </article>
 
@@ -117,7 +117,7 @@
                <aside class="reservation-form_aside">
                   <label for="medical-condition">¿Posee alguna condición médica?</label>
                   <aside class="reservation-form_aside_input_content">
-                     <input id="medical-condition" name="medical-condition" type="checkbox">
+                     <input id="medical-condition" name="medical condition" type="checkbox">
                   </aside>
                </aside>
                <aside class="reservation-form_aside">
@@ -187,10 +187,8 @@
       
       <section class="auth-by-code hide-by-height">
          <h2>
-            Ingrese el código que se muestra en la notificación push 
-            <b>
-               Si desea recibir el código de la notificación push, solo conceda los permisos pertinentes.
-            </b>
+            Ingrese el código que pronto se le mostrara en pantalla. Para confirmar que desea generar 
+            el boleto.
          </h2>
          <article class="auth-by-code_inputs_number">
             <input class="auth-by-code_input_number" type="number" min="0" max="9">
