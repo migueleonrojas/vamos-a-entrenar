@@ -35,7 +35,9 @@ lastInput.addEventListener('input', (e) => {
 
    const formData = new FormData($form);
 
-   let ticketDetail = new TicketDetailState().ticketDetail = {
+   let ticketDetail = new TicketDetailState(); 
+   
+   ticketDetail.ticketDetail = {
       id: generateRandomIdCode(),
       date_route: new RouteState().route.main_information.start_date,
       name_route: new RouteState().route.main_information.description,
