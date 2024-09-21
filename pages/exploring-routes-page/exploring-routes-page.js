@@ -8,7 +8,7 @@ const d = document;
 
 const insertRoutes = (routes) => {
    let $fragment = document.createDocumentFragment();
-   let $next_routes_cards_content = document.querySelector(".next-routes_cards_content");
+   let $next_routes_cards_content = document.querySelector(".exploring-routes_cards_content");
    
    d.querySelectorAll(".exploring-routes_card").forEach(el => el.remove());
 
