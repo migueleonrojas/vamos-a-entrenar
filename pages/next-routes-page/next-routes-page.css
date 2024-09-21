@@ -74,7 +74,8 @@ article > h1 {
 
 .next-routes_cards {
    top: -5rem;
-   left: -3%;
+   left: -5%;
+   width: 110%;
    height: 30vh;
    position: relative;
    
@@ -103,7 +104,7 @@ article > h1 {
    display: flex;
    height: 100%;
    gap: 0 2rem;
-   width: 110%;
+   width: 100%;
    overflow-x: auto;
    scroll-behavior: smooth;
    scrollbar-width: none;
