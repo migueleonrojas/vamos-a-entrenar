@@ -279,7 +279,14 @@
    margin: 0;
    text-align: center;
    font-size: 3rem;
-   padding: 3rem 0 3rem 0;
+   padding: 1rem 0 0rem 0;
+}
+
+.gallery-paragraph {
+   display: block;
+   font-size: 2rem;
+   text-align: center;
+   padding: 0rem 0 1rem 0;
 }
 
 .gallery_content {
@@ -327,12 +334,7 @@
    pointer-events: auto;
 }
 
-.gallery-paragraph {
-   display: block;
-   font-size: 2rem;
-   text-align: center;
-   padding: 2rem 0 2rem 0;
-}
+
 
 /* COUNT-VISIT SECTION */
 .count-visit {
