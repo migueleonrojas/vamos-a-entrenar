@@ -275,6 +275,13 @@
    background-color: #000000;
 }
 
+.gallery > h2 {
+   margin: 0;
+   text-align: center;
+   font-size: 3rem;
+   padding: 3rem 0 3rem 0;
+}
+
 .gallery_content {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -320,6 +327,13 @@
    pointer-events: auto;
 }
 
+.gallery-paragraph {
+   display: block;
+   font-size: 2rem;
+   text-align: center;
+   padding: 2rem 0 2rem 0;
+}
+
 /* COUNT-VISIT SECTION */
 .count-visit {
    padding: 2rem 0;
@@ -329,6 +343,7 @@
 .count-visit > h2 {
    margin: 0;
    text-align: center;
+   font-size: 3rem;
 }
 
 .count-visit > span {

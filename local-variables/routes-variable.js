@@ -1,4 +1,6 @@
 const routes = [
+
+
    /* {
       "id": 1,
       "difficulty": 7,
@@ -259,8 +261,8 @@ const routes = [
 				"link": "https://www.instagram.com/migueleonrojas/"
 			},
 		]
-   },
-   {
+   }, */
+   /* {
       "id": 2,
       "difficulty": 5,
       "active": false,
@@ -514,8 +516,8 @@ const routes = [
 				"link": "https://www.instagram.com/migueleonrojas/"
 			},
 		]
-   },
-   {
+   }, */
+   /* {
       "id": 3,
       "difficulty": 7,
       "active": true,
@@ -1012,7 +1014,7 @@ const routes = [
 			},
 		]
    }, */
-   {
+   /* {
       "id": 5,
       "difficulty": 7,
       "active": false,
@@ -1298,7 +1300,884 @@ const routes = [
 				"link": "https://www.instagram.com/migueleonrojas/"
 			},
 		]
-   },
+   }, */
+   /* {
+      "id": 6,
+      "difficulty": 10,
+      "active": true,
+      "type": "next-route",
+      "modality": "Campamento",
+      "enviroment": "Montaña",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fpico%20naiguata.webp?alt=media&token=4f5e22f3-2055-426d-8213-7c9bfcf0a665",
+      "main_information": {
+			"name": "Pico Naiguata",
+			"description": "Campamento al Pico Naiguata.",
+			"location": "Ubicado en el Parque Nacional Waraira Repano. sector La Julia.⛰️",
+			"start_date": new Date(2024, 7, 23, 19, 30, 0, 0),
+			"end_date": new Date(2024, 7, 25, 11, 0, 0, 0),
+			"meeting_point": "En frente del Central Madeirense del Marqués"
+		},
+      "itinerary": [
+         {
+				"text": `Para llegar al punto de encuentro debes ir a los Dos Caminos, hay una parada de camionetas en la parte de atras del Centro Comercial del Millenium, ubicas una plaza chiquita, justo al lado hay una salida del Metro, indicas al chofer que te vas a quedar en el Central Madeirense del Marqués.`,
+				"sub_text": []
+			},
+         {
+            "text": `Desde el Central Madeirense vamos rumbo a la Cota Mil o Avenida Boyaca, para acceder al sector La Julia`,
+            "sub_text": []
+         },
+         {
+            "text": `Llegaremos al Puesto de Guardaparques de La Julia, donde vamos a descansar, registrarse y tomar agua, para proseguir a la siguiente parada llamada El Tanque`,
+            "sub_text": []
+         },
+         {
+            "text": `En el Tanque se va a descansar y tomar agua`,
+            "sub_text": []
+         },
+         {
+            "text": `La próxima parada se llama el Mirador del Edén, ahi vamos a descansar y contemplar la vista.`,
+            "sub_text": []
+         },
+         {
+            "text": `Viene un tramo muy fuerte llamado Dos Banderas, este ascenso es el más fuerte de todos los tramos, muy inclinado, escalones muy altos y muy consecutivos es muy larga esta parte, asi que nos vamos a detener las veces que sean necesarias para descansar.`,
+            "sub_text": []
+         },
+         {
+            "text": `Al llegar al final de Dos Banderas, abremos completado el 40% del total del trayecto en ida hacia Pico Naiguata. Se tiene las siguientes propuestas en este punto del camino:`,
+            "sub_text": [
+               `Quedarse a acampar en el sitio, para proseguir mañana temprano.`,
+               `O seguir la caminata.`,
+            ]
+         },
+         {
+            "text": `Después vamos a llegar a una encrucijada, donde nos vamos a detener para ver si reponemos agua en un toma de agua que esta a escasos minutos del lugar.`,
+            "sub_text": []
+         },
+         {
+            "text": `El tramo en el que andaremos se llama Los Toyotas, es resbaloso, tiene su nivel de inclinación al principio y paulatinamente se irá volviendo menos inclinado.`,
+            "sub_text": []
+         },
+         {
+            "text": `Vamos a llegar a la parada llamada La Explanada. Lugar perfecto para acampar o si no proseguiremos, dependiendo de la disposición del grupo.`,
+            "sub_text": []
+         }, 
+         {
+            "text": `A escasos e inclinados minutos llegaremos a Topo Goering, ahí descansaremos un tiempo prudencial.`,
+            "sub_text": []
+         },
+         {
+            "text": `Proseguiremos hacia la parada del Urquijo que está relativamente cerca del Topo Goering, ahí también se pudiera acampar o seguir si desean.`,
+            "sub_text": []
+         },
+         { 
+            "text": `A escasos y cansados minutos llegaremos pronto al Cruce de La Fila Maestra, practicamente llegamos a la cresta de la montaña, pero Naiguata esta hacia el este, en una zona de la cresta más alta.`,
+            "sub_text": []
+         },
+         {
+            "text": `Caminaremos por esa cresta de la montaña rumbo al Anfiteatro que es la zona de Acampada deseada, pero en el camino nos encontraremos con los siguiente monumentos:`,
+            "sub_text": [
+               `La Arepa: Es una gran piedra en forma de arepa`,
+               `Los Platos del Diablo: Son 3 rocas con forma de disco, apiladas una debajo de otra haciendo equilibrio.`,
+            ]
+         },
+         {
+            "text": `Al ver los Platos del Diablo, es una referencia de que estamos muy cerca al Anfiteatro.`,
+            "sub_text": []
+         },
+         {
+            "text": `🎊✨🎉AL FIN LLEGAMOS AL ANFITEATRO 🎊✨🎉`,
+            "sub_text": []
+         },
+         {
+            "text": "Aquí montaremos campamento para ir al día siguiente al pico Naiguata.",
+            "sub_text": []
+         },
+         {
+            "text": "El día Sábado subiremos a la Cruz del Pico Naiguata, que queda a 15 minutos de la zona del campamento.",
+            "sub_text": []
+         },
+         {
+            "text": "El domingo trataremos de descender a las 11:00 A.M, para bajar con tiempo",
+            "sub_text": []
+         },
+         {
+            "text": "No bajeremos por el tramo de Dos Banderas, bajaremos por Ruta 77, asi nos aliviamos ese maltrato a las rodillas.",
+            "sub_text": []
+         },
+      ],
+      "climate_and_vegetation": {
+			"climate": {
+				"chance_of_rain": "El clima para la fecha convocada: 35% de probabilidades de Lluvia",
+				"temperature": "Temperatura: hasta 28º 🌡",
+				"humidity": "Humedad: 73% 💧",
+				"wind": "Viento: 7 km/h 🌫.",
+				"summary": "Chubascos, tormentas dispersas y nublado 🌧."
+			},
+			"vegetation": [
+				{
+					"text": `Al principio hay caminos de concreto, caminos de piedra suelta y caminos rocosos.`,
+					"sub_text": []
+				},
+				{
+					"text": `Áreas cubiertas por árboles, tramos muy inclinados, con escalones muy altos y consecutivosd sin vegetación alta.`,
+					"sub_text": []
+				},
+				{
+					"text": `Clima de Subpáramo en la zona más alta de la ruta.`,
+					"sub_text": []
+				},
+            {
+               "text": `Tramos estrechos, cerca de acantilados, superficies resbalosas.`,
+					"sub_text": []
+            },
+            {
+               "text": `Tramos donde se debe escalar rocas altas, resbalosas y filosas, asi que tener precaución es esas zonas.`,
+					"sub_text": []
+            },
+            {
+               "text": `Pasaremos por pasos muy cerca de precipicios muy altos, transitar con precaución.`,
+					"sub_text": []
+            }
+         ]
+		},
+      "places_to_visit": [
+         {
+				"text": `Guardaparques de La Julia.`,
+				"sub_text": []
+			},
+         {
+				"text": `El Tanque.`,
+				"sub_text": []
+			},
+         {
+				"text": `Mirador del Edén.`,
+				"sub_text": []
+			},
+         {
+				"text": `Subida de Dos Banderas.`,
+				"sub_text": []
+			},
+         {
+				"text": `Topo de Dos Banderas.`,
+				"sub_text": []
+			},
+         {
+				"text": `Los Toyotas.`,
+				"sub_text": []
+			},
+         {
+				"text": `La Explanada.`,
+				"sub_text": []
+			},
+         {
+				"text": `Topo Goering.`,
+				"sub_text": []
+			},
+         {
+				"text": `El Urquijo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Cruce de la Fila Maestra.`,
+				"sub_text": []
+			},
+         {
+				"text": `Anfiteatro.`,
+				"sub_text": []
+			},
+         {
+				"text": `Pico Naiguata.`,
+				"sub_text": []
+			},
+			
+      ],
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=11955221&elevation=on&images=on&maptype=H",
+      "equipment_required": [
+         {
+				"text": `Llevar morral de camping de 45 litros de capacidad como mínimo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Carpa de Montaña.`,
+				"sub_text": []
+			},
+         {
+				"text": `Sleeping.`,
+				"sub_text": []
+			},
+         {
+				"text": `Aislante.`,
+				"sub_text": []
+			},
+         {
+				"text": `Chaqueta para el frio.`,
+				"sub_text": []
+			},
+         {
+				"text": `Guantes.`,
+				"sub_text": []
+			},
+         {
+				"text": `Pasamontañas.`,
+				"sub_text": []
+			},
+			{
+				"text": `Gorra o sombrero 🧢👒.`,
+				"sub_text": []
+			},
+			{
+				"text": `Zapatos montañeros 👟🥾.`,
+				"sub_text": []
+			},
+			{
+				"text": `Franelas Deportivas de Secado Rápido que sea manga larga preferiblemente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Pantalones deportivo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Protector solar.`,
+				"sub_text": []
+			},
+			{
+				"text": `Repelente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar impermeable ya que el clima varía sin previo aviso.`,
+				"sub_text": []
+			},
+			{
+				"text": `Lentes de sol 🕶.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar bolsas plásticas (para proteger la ropa y aparatos electrónicos📲📷🔦).`,
+				"sub_text": []
+			},
+			{
+				"text": `Alguna chaqueta ligera de colores que reflejen los rayos del sol (por ejemplo color blanco).(opcional)`,
+				"sub_text": []
+			},
+         {
+            "text": `Debe de llevar varias mudas de ropa, vamos a estar varios días adentrados en la montaña.`,
+				"sub_text": []
+         }
+      ],
+      "feeding": [
+         {
+				"text": `Aliméntese adecuadamente.`,
+				"sub_text": []
+			},
+         {
+				"text": `LLeve sus alimentos para su estadia durante la montaña. Acuerdese que son 6 comidas aproximadamente. Puede llevar lo siguiente:`,
+				"sub_text": [
+               `Enlatados`,
+               `Pan Arabe o pan de molde`,
+               `Sandwich`,
+               `Las salsas que vaya a usar en sus alimentos mantegalas aparte, solo coloqueselas al momento de comer`,
+               `Vegetales, preferiblemente sin picar`,
+               `Galletas`,
+               `Mermeladas`,
+               `Aderesos`,
+               `Chocolates`,
+               `Frutas`,
+               `Frutos Secos`,
+               `Chucherías variadas`,
+               `Cereales`,
+               `Bebidas en polvo`,
+               `Lleve agua entre 3 litros a 4 litros`,
+            ]
+			}
+			
+      ],
+      "important_information": [
+         {
+				"text": `Debe indicar de donde viene para saber que tan lejos esta del punto de encuentro.`,
+				"sub_text": []
+			},
+			{
+				"text": `Si padece alguna enfermedad, condición médica de importancia o esta tomando algún medicamento, infórmelo con anterioridad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cualquier duda sobre la actividad consulte cuando lo requiera, con gusto le será respondido.`,
+				"sub_text": []
+			},
+			{
+				"text": `Menores de edad deben asistir con su representante.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ruta con dificultad alta.`,
+				"sub_text": []
+			},
+
+      ],
+      "prohibited": [
+         {
+				"text": `🤸🏼‍♂️ Actos imprudentes que coloquen el riesgo su integridad física o la de otros participantes, recuerde no contamos con paramédico ni seguro para la actividad.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Desviarse de la ruta demarcada.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ingesta de sustancias alcohólicas, estupefacientes y psicotrópicas.`,
+				"sub_text": []
+			},
+			{
+				"text": `🚯Arrojar basura en el trayecto de la ruta, cualquier desperdicio debe guardarlo en su mochila para ser depositado solo en los sitios adecuados para ello.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `El ritmo de caminata grupal es suave, por lo que no debe adelantarse, atrasarse o alejarse del grupo.`,
+				"sub_text": []
+			},
+      ],
+      "terms_and_conditions": [
+         {
+				"text": `Si usted confirma su participación está aceptando cada uno de los términos y condiciones.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cumplir cada una de las recomendaciones, prohibiciones dadas para la actividad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Datos que debe suministrar: Nombres, Apellidos, N- cédula, un número de contacto de familiar o persona cercana (Solo será usado en caso de emergencia).
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Debe estar siempre atento y cumplir las indicaciones.`,
+				"sub_text": []
+			},
+      ],
+      "our_networks": [
+			{
+				"name":"Intagram",
+				"profile": "@migueleonrojas",
+				"link": "https://www.instagram.com/migueleonrojas/"
+			},
+		]
+   }, */
+   /* {
+      "id": 7,
+      "difficulty": 5,
+      "active": false,
+      "type": "next-route",
+      "modality": "Campamento",
+      "enviroment": "Montaña",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Flagunazo.webp?alt=media&token=53c4a2b1-cd53-4988-b13d-15bc4810f90a",
+      "main_information": {
+			"name": "Lagunazo",
+			"description": "Campamento en Lagunazo.",
+			"location": "Ubicado en el Parque Nacional Waraira Repano.⛰️",
+			"start_date": new Date(2024, 9, 6, 18, 0, 0, 0),
+			"end_date": new Date(2024, 9, 8, 2, 0, 0, 0),
+			"meeting_point": "En frente de la Previsora en Plaza Venezuela"
+		},
+      "itinerary": [
+         {
+            "text": `Desde la Previsora, podemos tomar un Ridery para llegar más rápido a la Estación de Teleférico de Mariperez.`,
+            "sub_text": [
+               "Aproximadamente cuesta la carrera entre 4$ a 8$, los gastos se reparten equitativamente."
+            ]
+         },
+         {
+            "text": `O si no, ir en metro hasta la estación de Colegio de Ingenieros y tomar transporte público.`,
+            "sub_text": [
+               "El pasaje de metro esta en 10 bs por viaje, se requiere una tarjeta de metro la cual esta aproximadamente en 50bs",
+               "El costo del transporte público esta en 15bs hasta 20bs",
+            ]
+         },
+         {
+            "text": `Estando en la Estación de Teleférico de Mariperez tenemos 2 alternativas para subir.`,
+            "sub_text": [
+               "Ascender en el teleférico de forma gratuita, solo nos identificamos como senderistas, sí esas políticas han cambiado, entonces el costo esta en 10$ por persona, sí pagas en bs esta a 12$.",
+               "O ascender en Jeep, el cual esta en 5$ por persona, el inconveniente es que hay que esperar a que se llene el Jeep.",
+            ]
+         },
+         {
+            "text": `Ya estando arriba es probable que nos tengamos que registrar en el comando de la Guardia Nacional, asi que hay cosas que no podemos llevar, como lo siguiente:`,
+            "sub_text": [
+               "Cuchillos",
+               "Yesqueros",
+               "Desodorante en Spray"
+            ]
+         },
+         {
+            "text": `Ya después si podremos ir a Lagunazo, se preve llegar en 2 horas a paso lento.`,
+            "sub_text": []
+         }
+      
+      ],
+      "climate_and_vegetation": {
+			"climate": {
+				"chance_of_rain": "El clima para la fecha convocada: 26.3% de probabilidades de Lluvia",
+				"temperature": "Temperatura: hasta 29º 🌡",
+				"humidity": "Humedad: 74% 💧",
+				"wind": "Viento: 5.5 km/h 🌫.",
+				"summary": "Muy nublado 🌧."
+			},
+			"vegetation": [
+            {
+               "text": `Bajadas por caminos de tierra resbalosa, raices resbalosas, piedras sueltas y tramos angostos.`,
+					"sub_text": []
+            },
+            {
+               "text": `Tramos con rocas altas, rasposas, no fijas y resbalosas.`,
+					"sub_text": []
+            },
+            {
+               "text": `Algunos tramos con un grado de inclinación algo considerable.`,
+					"sub_text": []
+            },
+         ]
+		},
+      "places_to_visit": [
+         {
+				"text": `Sistema de Teleférico Waraira Repano.`,
+				"sub_text": []
+			},
+         {
+				"text": `Tanque Boqueron.`,
+				"sub_text": []
+			},
+         {
+				"text": `Lagunazo.`,
+				"sub_text": []
+			},
+			
+      ],
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=9155282&elevation=on&images=on&maptype=H",
+      "equipment_required": [
+         {
+				"text": `Llevar morral de camping de 45 litros de capacidad como mínimo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Carpa de Montaña.`,
+				"sub_text": []
+			},
+         {
+				"text": `Sleeping.`,
+				"sub_text": []
+			},
+         {
+				"text": `Aislante.`,
+				"sub_text": []
+			},
+         {
+				"text": `Chaqueta para el frio.`,
+				"sub_text": []
+			},
+         {
+				"text": `Guantes.`,
+				"sub_text": []
+			},
+         {
+				"text": `Pasamontañas.`,
+				"sub_text": []
+			},
+			{
+				"text": `Gorra o sombrero 🧢👒.`,
+				"sub_text": []
+			},
+			{
+				"text": `Zapatos montañeros 👟🥾.`,
+				"sub_text": []
+			},
+			{
+				"text": `Franelas Deportivas de Secado Rápido que sea manga larga preferiblemente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Pantalones deportivo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Protector solar.`,
+				"sub_text": []
+			},
+			{
+				"text": `Repelente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar impermeable ya que el clima varía sin previo aviso.`,
+				"sub_text": []
+			},
+			{
+				"text": `Lentes de sol 🕶.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar bolsas plásticas (para proteger la ropa y aparatos electrónicos📲📷🔦).`,
+				"sub_text": []
+			},
+			{
+				"text": `Alguna chaqueta ligera de colores que reflejen los rayos del sol (por ejemplo color blanco).(opcional)`,
+				"sub_text": []
+			},
+         {
+            "text": `Debe de llevar varias mudas de ropa, vamos a estar varios días adentrados en la montaña.`,
+				"sub_text": []
+         }
+      ],
+      "feeding": [
+         {
+				"text": `Aliméntese adecuadamente.`,
+				"sub_text": []
+			},
+         {
+				"text": `LLeve sus alimentos para su estadia durante la montaña. Acuerdese que son 6 comidas aproximadamente. Puede llevar lo siguiente:`,
+				"sub_text": [
+               `Enlatados`,
+               `Pan Arabe o pan de molde`,
+               `Sandwich`,
+               `Las salsas que vaya a usar en sus alimentos mantegalas aparte, solo coloqueselas al momento de comer`,
+               `Vegetales, preferiblemente sin picar`,
+               `Galletas`,
+               `Mermeladas`,
+               `Aderesos`,
+               `Chocolates`,
+               `Frutas`,
+               `Frutos Secos`,
+               `Chucherías variadas`,
+               `Cereales`,
+               `Bebidas en polvo`,
+               `Lleve agua entre 3 litros a 4 litros`,
+            ]
+			}
+			
+      ],
+      "important_information": [
+         {
+				"text": `Debe indicar de donde viene para saber que tan lejos esta del punto de encuentro.`,
+				"sub_text": []
+			},
+			{
+				"text": `Si padece alguna enfermedad, condición médica de importancia o esta tomando algún medicamento, infórmelo con anterioridad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cualquier duda sobre la actividad consulte cuando lo requiera, con gusto le será respondido.`,
+				"sub_text": []
+			},
+			{
+				"text": `Menores de edad deben asistir con su representante.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ruta con dificultad fácil.`,
+				"sub_text": []
+			},
+
+      ],
+      "prohibited": [
+         {
+				"text": `🤸🏼‍♂️ Actos imprudentes que coloquen el riesgo su integridad física o la de otros participantes, recuerde no contamos con paramédico ni seguro para la actividad.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Desviarse de la ruta demarcada.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ingesta de sustancias alcohólicas, estupefacientes y psicotrópicas.`,
+				"sub_text": []
+			},
+			{
+				"text": `🚯Arrojar basura en el trayecto de la ruta, cualquier desperdicio debe guardarlo en su mochila para ser depositado solo en los sitios adecuados para ello.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `El ritmo de caminata grupal es suave, por lo que no debe adelantarse, atrasarse o alejarse del grupo.`,
+				"sub_text": []
+			},
+      ],
+      "terms_and_conditions": [
+         {
+				"text": `Si usted confirma su participación está aceptando cada uno de los términos y condiciones.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cumplir cada una de las recomendaciones, prohibiciones dadas para la actividad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Datos que debe suministrar: Nombres, Apellidos, N- cédula, un número de contacto de familiar o persona cercana (Solo será usado en caso de emergencia).
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Debe estar siempre atento y cumplir las indicaciones.`,
+				"sub_text": []
+			},
+      ],
+      "our_networks": [
+			{
+				"name":"Intagram",
+				"profile": "@migueleonrojas",
+				"link": "https://www.instagram.com/migueleonrojas/"
+			},
+		]
+   }, */
+   /* {
+      "id": 8,
+      "difficulty": 7,
+      "active": true,
+      "type": "exploring-route",
+      "modality": "Ruta ida y vuelta.",
+      "enviroment": "Montaña",
+      "image": "https://firebasestorage.googleapis.com/v0/b/miguel-leon-4d8e7.appspot.com/o/routes-image%2Fcascada%20galindo.webp?alt=media&token=152b3aac-52fc-4d0b-a268-2c8daa3142c1",
+      "main_information": {
+			"name": "Cascada Galindo",
+			"description": "Excursión a Cascada Galindo.",
+			"location": "Ubicado en el Parque Nacional Waraira Repano. Sector Galindo⛰️",
+			"start_date": new Date(2024, 9, 29, 7, 30, 0, 0),
+			"end_date": new Date(2024, 9, 29, 15, 0, 0, 0),
+			"meeting_point": "En la estación de metro de Petare"
+		},
+      "itinerary": [
+         {
+            "text": `Desde la estación de metro de Petare, nos dirigiremos a tomar transporte público hacia la Urbanización Terrazas del Ávila.`,
+            "sub_text": []
+         },
+         {
+            "text": `Nos bajaremos en donde esta el farmatodo que esta en frente de la entrada de la Urbanización.`,
+            "sub_text": []
+         },
+         {
+            "text": `Accederemos y llegaremos al final de la calle 1, donde estaremos cerca del Puesto de Guardaparques Galindo.`,
+            "sub_text": []
+         },
+         {
+            "text": `Nos registraremos y seguiremos rumbo a la primera parada la cual es un mirador.`,
+            "sub_text": []
+         },
+         {
+            "text": `Ahí tomaremos un descanso, para proseguir después hacia Cruz del Mirador.`,
+            "sub_text": []
+         },
+         {
+            "text": `Este tramo es muy caliente por el clima de Sabana y lo muy expuesto que esta del sol, será dificultoso subir este tramo.`,
+            "sub_text": []
+         },
+         {
+            "text": `Llegaremos a un cruce, donde hay una cruz, aqui descansaremos y tomaremos a mano izquierda`,
+            "sub_text": []
+         },
+         {
+            "text": `Desde la cruz hasta la Cascada Galindo hay una distancia aproximada de 800 metros de sendero y estaremos a una altura de 1620 metros sobre el nivel del mar.`,
+            "sub_text": []
+         },
+         {
+            "text": `Se llevara tiras de telas verde fosforecentes para marcar la ruta de retorno y un silbato de 115 decibeles.`,
+            "sub_text": []
+         }
+      
+      ],
+      "climate_and_vegetation": {
+			"climate": {
+				"chance_of_rain": "El clima para la fecha convocada: 40% de probabilidades de Lluvia",
+				"temperature": "Temperatura: hasta 27º 🌡",
+				"humidity": "Humedad: 81% 💧",
+				"wind": "Viento: 6 km/h 🌫.",
+				"summary": "Tormentas eléctricas dispersas 🌧."
+			},
+			"vegetation": [
+            {
+               "text": `Caminos de tierra con piedras sueltas.`,
+					"sub_text": []
+            },
+            {
+               "text": `Gamelote medianamente alto en tramos angostos donde se concentra mucho el calor.`,
+					"sub_text": []
+            },
+            {
+               "text": `En el tramo que esta tapado por los arboles, se deduce que abran caminos angostos con rocas resbalosas, estrechos con acantilados a un costado.`,
+					"sub_text": []
+            },
+            {
+               "text": `En la zona de la Cascada, superficie rocosa pudiera haber riesgo de caidas por resbalos, tener precaución.`,
+					"sub_text": []
+            },
+            
+         ]
+		},
+      "places_to_visit": [
+         {
+				"text": `Guardaparques de Galindo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Mirador de Galindo.`,
+				"sub_text": []
+			},
+         {
+				"text": `Triple Cruce.`,
+				"sub_text": []
+			},
+         {
+				"text": `Cascada Galindo.`,
+				"sub_text": []
+			},
+			
+      ],
+      "the_marked_route": "https://es.wikiloc.com/wikiloc/embedv2.do?id=42711878&elevation=off&images=off&maptype=H",
+      "equipment_required": [
+         {
+				"text": `Sólo llevar morral 🎒 (no llevar bolsos de costado o maletas para una mayor comodidad).`,
+				"sub_text": []
+			},
+			{
+				"text": `Gorra o sombrero 🧢👒.`,
+				"sub_text": []
+			},
+			{
+				"text": `Zapatos montañeros 👟🥾.`,
+				"sub_text": []
+			},
+			{
+				"text": `Franela Deportiva de Secado Rápido que sea manga larga preferiblemente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Pantalon deportivo.`,
+				"sub_text": []
+			},
+			{
+				"text": `Protector solar.`,
+				"sub_text": []
+			},
+			{
+				"text": `Repelente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar impermeable ya que el clima varía sin previo aviso.`,
+				"sub_text": []
+			},
+			{
+				"text": `Lentes de sol 🕶.`,
+				"sub_text": []
+			},
+			{
+				"text": `Llevar bolsas plásticas (para proteger la ropa y aparatos electrónicos📲📷🔦).`,
+				"sub_text": []
+			},
+			{
+				"text": `Traje de Baño (Opcional).`,
+				"sub_text": []
+			},
+			{
+				"text": `Alguna chaqueta ligera colores que reflejen los rayos del sol (por ejemplo color blanco).(opcional)`,
+				"sub_text": []
+			},
+      ],
+      "feeding": [
+         {
+				"text": `Aliméntese adecuadamente.`,
+				"sub_text": []
+			},
+			{
+				"text": `Frutas 🍌🍉🍊.`,
+				"sub_text": []
+			},
+			{
+				"text": `Snacks: chocolate, barras energéticas, frutos secos.🍭🍬🍫`,
+				"sub_text": []
+			},
+			{
+				"text": `Lleve agua entre 1.5 litros a 3 litros.`,
+				"sub_text": []
+			},
+			
+      ],
+      "important_information": [
+         {
+				"text": `Debe indicar de donde viene para saber que tan lejos esta del punto de encuentro.`,
+				"sub_text": []
+			},
+			{
+				"text": `Si padece alguna enfermedad, condición médica de importancia o esta tomando algún medicamento, infórmelo con anterioridad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cualquier duda sobre la actividad consulte cuando lo requiera, con gusto le será respondido.`,
+				"sub_text": []
+			},
+			{
+				"text": `Menores de edad deben asistir con su representante.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ruta con dificultad dificil.`,
+				"sub_text": []
+			},
+
+      ],
+      "prohibited": [
+         {
+				"text": `🤸🏼‍♂️ Actos imprudentes que coloquen el riesgo su integridad física o la de otros participantes, recuerde no contamos con paramédico ni seguro para la actividad.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Desviarse de la ruta demarcada.`,
+				"sub_text": []
+			},
+			{
+				"text": `Ingesta de sustancias alcohólicas, estupefacientes y psicotrópicas.`,
+				"sub_text": []
+			},
+			{
+				"text": `🚯Arrojar basura en el trayecto de la ruta, cualquier desperdicio debe guardarlo en su mochila para ser depositado solo en los sitios adecuados para ello.
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `El ritmo de caminata grupal es suave, por lo que no debe adelantarse, atrasarse o alejarse del grupo.`,
+				"sub_text": []
+			},
+      ],
+      "terms_and_conditions": [
+         {
+				"text": `Si usted confirma su participación está aceptando cada uno de los términos y condiciones.`,
+				"sub_text": []
+			},
+			{
+				"text": `Cumplir cada una de las recomendaciones, prohibiciones dadas para la actividad.`,
+				"sub_text": []
+			},
+			{
+				"text": `Datos que debe suministrar: Nombres, Apellidos, N- cédula, un número de contacto de familiar o persona cercana (Solo será usado en caso de emergencia).
+				`,
+				"sub_text": []
+			},
+			{
+				"text": `Debe estar siempre atento y cumplir las indicaciones.`,
+				"sub_text": []
+			},
+      ],
+      "our_networks": [
+			{
+				"name":"Intagram",
+				"profile": "@migueleonrojas",
+				"link": "https://www.instagram.com/migueleonrojas/"
+			},
+		]
+   }, */
    
 ];
 
