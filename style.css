@@ -279,7 +279,8 @@
    margin: 0;
    text-align: center;
    font-size: 3rem;
-   padding: 1rem 0 0rem 0;
+   display: flex;
+   justify-content: center;
 }
 
 .gallery-paragraph {
