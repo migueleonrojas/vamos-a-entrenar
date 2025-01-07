@@ -1,0 +1,144 @@
+.thanks {
+   color: #000;
+}
+
+.thanks > h2 {
+   text-align: center;
+   font-size: 3rem;
+   margin: 0;
+   margin-top: 3rem;
+}
+
+.thanks > p {
+   text-align: center;
+}
+
+.thanks_emoji {
+   font-size: 4rem;
+   margin: 0;
+}
+
+.thanks_paragraph {
+   font-style: italic;
+   font-weight: 200;
+   font-size: 1.5rem;
+}
+
+
+/* ***************** */
+
+.colaboration-card {
+   display: grid;
+   color: #000000;
+   grid-template-columns: 50% 50%;
+   border: 0.5rem dashed red;
+   border-radius: 2rem;
+   padding: 1rem;
+   margin: 1rem;
+   margin-bottom: 4rem;
+}
+
+.colaboration-card_info {
+   display: grid;
+   grid-template-columns: 50%;
+   gap: 1rem;
+   justify-content: center;
+   padding: 1rem;
+}
+
+.colaboration-card_info_means-of-payment {
+   font-size: 1.8rem;
+   grid-column: span 2;
+   text-align: center;
+   font-weight: 700;
+}
+
+.colaboration-card_info_label {
+   font-weight: 800;
+}
+
+.colaboration-card_info_value {
+   text-align: right;
+}
+
+.colaboration-card_about {
+   border-left: 1px solid red;
+   padding: 0 1rem;
+}
+
+.colaboration-card_about_title {
+   margin-top: 0;
+}
+
+.colaboration-card_about_emoji {
+   text-align: center;
+   font-size: 2rem;
+   margin: 0;
+}
+
+.colaboration-card_about_note {
+   text-align: center;
+   font-weight: 700;
+}
+
+@media screen and (max-width:40rem) {
+
+   .colaboration-card {
+
+      grid-template-columns: 100%;
+      gap: 1rem 0;
+      
+   }
+
+   .colaboration-card_info {
+      gap: 0;
+   }
+
+   .colaboration-card_info > span {
+      grid-column: span 2;
+      text-align: center;
+   }   
+
+   .colaboration-card_about {
+      border-top: 1px solid red;
+      border-left: none;
+      padding: 1rem;
+
+   }
+
+   .colaboration-card_about > h2 {
+      text-align: center;
+   }
+}
+
+/* ******************** */
+
+.report-colaboration {
+   color: #000;
+}
+
+.report-colaboration_details {
+   text-align: center;
+   font-size: 2.4rem;
+   margin: 0;
+}
+
+.report-colaboration_emoji {
+   font-size: 5rem;
+   text-align: center;
+   margin: 0;
+}
+
+.report-colaboration_button-whatsapp {
+   display: block;
+   margin: 2rem auto;
+   width: 12rem;
+   padding: 1rem;
+   background-color: #005c4b;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 2rem;
+   font-size: 2rem;
+}
+
