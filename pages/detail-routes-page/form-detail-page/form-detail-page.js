@@ -121,6 +121,8 @@ $form.addEventListener("submit", async (e) => {
 
 d.addEventListener("DOMContentLoaded", e => {
 
+   waitForAnimationMenuMovilByChangeCurrentUrl();
+
    let route = new RouteState();
 
    let { terms_and_conditions, main_information } = route.route;
